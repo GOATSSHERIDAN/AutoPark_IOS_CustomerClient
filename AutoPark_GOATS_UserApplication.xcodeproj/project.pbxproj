@@ -1,0 +1,685 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF293233252B84AB00850D83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF293232252B84AB00850D83 /* AppDelegate.swift */; };
+		BF293235252B84AB00850D83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF293234252B84AB00850D83 /* SceneDelegate.swift */; };
+		BF293237252B84AB00850D83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF293236252B84AB00850D83 /* ViewController.swift */; };
+		BF29323A252B84AB00850D83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF293238252B84AB00850D83 /* Main.storyboard */; };
+		BF29323D252B84AB00850D83 /* AutoPark_GOATS_UserApplication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF29323B252B84AB00850D83 /* AutoPark_GOATS_UserApplication.xcdatamodeld */; };
+		BF29323F252B84AC00850D83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF29323E252B84AC00850D83 /* Assets.xcassets */; };
+		BF293242252B84AC00850D83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF293240252B84AC00850D83 /* LaunchScreen.storyboard */; };
+		BF29324D252B84AD00850D83 /* AutoPark_GOATS_UserApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF29324C252B84AD00850D83 /* AutoPark_GOATS_UserApplicationTests.swift */; };
+		BF293258252B84AD00850D83 /* AutoPark_GOATS_UserApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF293257252B84AD00850D83 /* AutoPark_GOATS_UserApplicationUITests.swift */; };
+		BF293280252B892200850D83 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF29327F252B892200850D83 /* SignInViewController.swift */; };
+		BF293286252B8AD800850D83 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF293285252B8AD700850D83 /* SignUpViewController.swift */; };
+		BF90AA0B252B9E8400781CC2 /* PasswordRecoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF90AA0A252B9E8400781CC2 /* PasswordRecoverViewController.swift */; };
+		BF90AA10252BA3EA00781CC2 /* SuccessfullySignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF90AA0F252BA3EA00781CC2 /* SuccessfullySignUpViewController.swift */; };
+		BF90AA15252BA5C300781CC2 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF90AA14252BA5C300781CC2 /* ResetPasswordViewController.swift */; };
+		BF90AA1A252BA78000781CC2 /* UserMainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF90AA19252BA78000781CC2 /* UserMainPageViewController.swift */; };
+		BF90AA1F252BB73E00781CC2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF90AA1E252BB73E00781CC2 /* User.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF293249252B84AD00850D83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF293227252B84AB00850D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF29322E252B84AB00850D83;
+			remoteInfo = AutoPark_GOATS_UserApplication;
+		};
+		BF293254252B84AD00850D83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF293227252B84AB00850D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF29322E252B84AB00850D83;
+			remoteInfo = AutoPark_GOATS_UserApplication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF29322F252B84AB00850D83 /* AutoPark_GOATS_UserApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoPark_GOATS_UserApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF293232252B84AB00850D83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF293234252B84AB00850D83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BF293236252B84AB00850D83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF293239252B84AB00850D83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF29323C252B84AB00850D83 /* AutoPark_GOATS_UserApplication.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AutoPark_GOATS_UserApplication.xcdatamodel; sourceTree = "<group>"; };
+		BF29323E252B84AC00850D83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF293241252B84AC00850D83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF293243252B84AC00850D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF293248252B84AD00850D83 /* AutoPark_GOATS_UserApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoPark_GOATS_UserApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF29324C252B84AD00850D83 /* AutoPark_GOATS_UserApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoPark_GOATS_UserApplicationTests.swift; sourceTree = "<group>"; };
+		BF29324E252B84AD00850D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF293253252B84AD00850D83 /* AutoPark_GOATS_UserApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoPark_GOATS_UserApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF293257252B84AD00850D83 /* AutoPark_GOATS_UserApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoPark_GOATS_UserApplicationUITests.swift; sourceTree = "<group>"; };
+		BF293259252B84AD00850D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF29327F252B892200850D83 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		BF293285252B8AD700850D83 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		BF90AA0A252B9E8400781CC2 /* PasswordRecoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoverViewController.swift; sourceTree = "<group>"; };
+		BF90AA0F252BA3EA00781CC2 /* SuccessfullySignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfullySignUpViewController.swift; sourceTree = "<group>"; };
+		BF90AA14252BA5C300781CC2 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		BF90AA19252BA78000781CC2 /* UserMainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMainPageViewController.swift; sourceTree = "<group>"; };
+		BF90AA1E252BB73E00781CC2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF29322C252B84AB00850D83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF293245252B84AD00850D83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF293250252B84AD00850D83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF293226252B84AB00850D83 = {
+			isa = PBXGroup;
+			children = (
+				BF293231252B84AB00850D83 /* AutoPark_GOATS_UserApplication */,
+				BF29324B252B84AD00850D83 /* AutoPark_GOATS_UserApplicationTests */,
+				BF293256252B84AD00850D83 /* AutoPark_GOATS_UserApplicationUITests */,
+				BF293230252B84AB00850D83 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF293230252B84AB00850D83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF29322F252B84AB00850D83 /* AutoPark_GOATS_UserApplication.app */,
+				BF293248252B84AD00850D83 /* AutoPark_GOATS_UserApplicationTests.xctest */,
+				BF293253252B84AD00850D83 /* AutoPark_GOATS_UserApplicationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF293231252B84AB00850D83 /* AutoPark_GOATS_UserApplication */ = {
+			isa = PBXGroup;
+			children = (
+				BF293243252B84AC00850D83 /* Info.plist */,
+				BF29326E252B876200850D83 /* Assets */,
+				BF29326D252B875600850D83 /* Classes */,
+				BF293269252B86EF00850D83 /* ViewControllers */,
+				BF293268252B86CE00850D83 /* StoryBoards */,
+			);
+			path = AutoPark_GOATS_UserApplication;
+			sourceTree = "<group>";
+		};
+		BF29324B252B84AD00850D83 /* AutoPark_GOATS_UserApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF29324C252B84AD00850D83 /* AutoPark_GOATS_UserApplicationTests.swift */,
+				BF29324E252B84AD00850D83 /* Info.plist */,
+			);
+			path = AutoPark_GOATS_UserApplicationTests;
+			sourceTree = "<group>";
+		};
+		BF293256252B84AD00850D83 /* AutoPark_GOATS_UserApplicationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BF293257252B84AD00850D83 /* AutoPark_GOATS_UserApplicationUITests.swift */,
+				BF293259252B84AD00850D83 /* Info.plist */,
+			);
+			path = AutoPark_GOATS_UserApplicationUITests;
+			sourceTree = "<group>";
+		};
+		BF293268252B86CE00850D83 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				BF293240252B84AC00850D83 /* LaunchScreen.storyboard */,
+				BF293238252B84AB00850D83 /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		BF293269252B86EF00850D83 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BF29327F252B892200850D83 /* SignInViewController.swift */,
+				BF293236252B84AB00850D83 /* ViewController.swift */,
+				BF293285252B8AD700850D83 /* SignUpViewController.swift */,
+				BF90AA0A252B9E8400781CC2 /* PasswordRecoverViewController.swift */,
+				BF90AA0F252BA3EA00781CC2 /* SuccessfullySignUpViewController.swift */,
+				BF90AA14252BA5C300781CC2 /* ResetPasswordViewController.swift */,
+				BF90AA19252BA78000781CC2 /* UserMainPageViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BF29326D252B875600850D83 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BF293234252B84AB00850D83 /* SceneDelegate.swift */,
+				BF293232252B84AB00850D83 /* AppDelegate.swift */,
+				BF90AA1E252BB73E00781CC2 /* User.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BF29326E252B876200850D83 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				BF293270252B87AC00850D83 /* Audios */,
+				BF29326F252B87A400850D83 /* Images */,
+				BF29323B252B84AB00850D83 /* AutoPark_GOATS_UserApplication.xcdatamodeld */,
+				BF29323E252B84AC00850D83 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		BF29326F252B87A400850D83 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		BF293270252B87AC00850D83 /* Audios */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Audios;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF29322E252B84AB00850D83 /* AutoPark_GOATS_UserApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF29325C252B84AD00850D83 /* Build configuration list for PBXNativeTarget "AutoPark_GOATS_UserApplication" */;
+			buildPhases = (
+				BF29322B252B84AB00850D83 /* Sources */,
+				BF29322C252B84AB00850D83 /* Frameworks */,
+				BF29322D252B84AB00850D83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutoPark_GOATS_UserApplication;
+			productName = AutoPark_GOATS_UserApplication;
+			productReference = BF29322F252B84AB00850D83 /* AutoPark_GOATS_UserApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF293247252B84AD00850D83 /* AutoPark_GOATS_UserApplicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF29325F252B84AD00850D83 /* Build configuration list for PBXNativeTarget "AutoPark_GOATS_UserApplicationTests" */;
+			buildPhases = (
+				BF293244252B84AD00850D83 /* Sources */,
+				BF293245252B84AD00850D83 /* Frameworks */,
+				BF293246252B84AD00850D83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF29324A252B84AD00850D83 /* PBXTargetDependency */,
+			);
+			name = AutoPark_GOATS_UserApplicationTests;
+			productName = AutoPark_GOATS_UserApplicationTests;
+			productReference = BF293248252B84AD00850D83 /* AutoPark_GOATS_UserApplicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BF293252252B84AD00850D83 /* AutoPark_GOATS_UserApplicationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF293262252B84AD00850D83 /* Build configuration list for PBXNativeTarget "AutoPark_GOATS_UserApplicationUITests" */;
+			buildPhases = (
+				BF29324F252B84AD00850D83 /* Sources */,
+				BF293250252B84AD00850D83 /* Frameworks */,
+				BF293251252B84AD00850D83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF293255252B84AD00850D83 /* PBXTargetDependency */,
+			);
+			name = AutoPark_GOATS_UserApplicationUITests;
+			productName = AutoPark_GOATS_UserApplicationUITests;
+			productReference = BF293253252B84AD00850D83 /* AutoPark_GOATS_UserApplicationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF293227252B84AB00850D83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					BF29322E252B84AB00850D83 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					BF293247252B84AD00850D83 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = BF29322E252B84AB00850D83;
+					};
+					BF293252252B84AD00850D83 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = BF29322E252B84AB00850D83;
+					};
+				};
+			};
+			buildConfigurationList = BF29322A252B84AB00850D83 /* Build configuration list for PBXProject "AutoPark_GOATS_UserApplication" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF293226252B84AB00850D83;
+			productRefGroup = BF293230252B84AB00850D83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF29322E252B84AB00850D83 /* AutoPark_GOATS_UserApplication */,
+				BF293247252B84AD00850D83 /* AutoPark_GOATS_UserApplicationTests */,
+				BF293252252B84AD00850D83 /* AutoPark_GOATS_UserApplicationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF29322D252B84AB00850D83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF293242252B84AC00850D83 /* LaunchScreen.storyboard in Resources */,
+				BF29323F252B84AC00850D83 /* Assets.xcassets in Resources */,
+				BF29323A252B84AB00850D83 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF293246252B84AD00850D83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF293251252B84AD00850D83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF29322B252B84AB00850D83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF90AA15252BA5C300781CC2 /* ResetPasswordViewController.swift in Sources */,
+				BF293286252B8AD800850D83 /* SignUpViewController.swift in Sources */,
+				BF293237252B84AB00850D83 /* ViewController.swift in Sources */,
+				BF29323D252B84AB00850D83 /* AutoPark_GOATS_UserApplication.xcdatamodeld in Sources */,
+				BF90AA1A252BA78000781CC2 /* UserMainPageViewController.swift in Sources */,
+				BF90AA10252BA3EA00781CC2 /* SuccessfullySignUpViewController.swift in Sources */,
+				BF90AA0B252B9E8400781CC2 /* PasswordRecoverViewController.swift in Sources */,
+				BF293233252B84AB00850D83 /* AppDelegate.swift in Sources */,
+				BF293280252B892200850D83 /* SignInViewController.swift in Sources */,
+				BF293235252B84AB00850D83 /* SceneDelegate.swift in Sources */,
+				BF90AA1F252BB73E00781CC2 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF293244252B84AD00850D83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF29324D252B84AD00850D83 /* AutoPark_GOATS_UserApplicationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF29324F252B84AD00850D83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF293258252B84AD00850D83 /* AutoPark_GOATS_UserApplicationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF29324A252B84AD00850D83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF29322E252B84AB00850D83 /* AutoPark_GOATS_UserApplication */;
+			targetProxy = BF293249252B84AD00850D83 /* PBXContainerItemProxy */;
+		};
+		BF293255252B84AD00850D83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF29322E252B84AB00850D83 /* AutoPark_GOATS_UserApplication */;
+			targetProxy = BF293254252B84AD00850D83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF293238252B84AB00850D83 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF293239252B84AB00850D83 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF293240252B84AC00850D83 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF293241252B84AC00850D83 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF29325A252B84AD00850D83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF29325B252B84AD00850D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF29325D252B84AD00850D83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AutoPark_GOATS_UserApplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.sheridancollege.AutoPark-GOATS-UserApplication";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF29325E252B84AD00850D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AutoPark_GOATS_UserApplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.sheridancollege.AutoPark-GOATS-UserApplication";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BF293260252B84AD00850D83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AutoPark_GOATS_UserApplicationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.sheridancollege.AutoPark-GOATS-UserApplicationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoPark_GOATS_UserApplication.app/AutoPark_GOATS_UserApplication";
+			};
+			name = Debug;
+		};
+		BF293261252B84AD00850D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AutoPark_GOATS_UserApplicationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.sheridancollege.AutoPark-GOATS-UserApplicationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoPark_GOATS_UserApplication.app/AutoPark_GOATS_UserApplication";
+			};
+			name = Release;
+		};
+		BF293263252B84AD00850D83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AutoPark_GOATS_UserApplicationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.sheridancollege.AutoPark-GOATS-UserApplicationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AutoPark_GOATS_UserApplication;
+			};
+			name = Debug;
+		};
+		BF293264252B84AD00850D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AutoPark_GOATS_UserApplicationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.sheridancollege.AutoPark-GOATS-UserApplicationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AutoPark_GOATS_UserApplication;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF29322A252B84AB00850D83 /* Build configuration list for PBXProject "AutoPark_GOATS_UserApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF29325A252B84AD00850D83 /* Debug */,
+				BF29325B252B84AD00850D83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF29325C252B84AD00850D83 /* Build configuration list for PBXNativeTarget "AutoPark_GOATS_UserApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF29325D252B84AD00850D83 /* Debug */,
+				BF29325E252B84AD00850D83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF29325F252B84AD00850D83 /* Build configuration list for PBXNativeTarget "AutoPark_GOATS_UserApplicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF293260252B84AD00850D83 /* Debug */,
+				BF293261252B84AD00850D83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF293262252B84AD00850D83 /* Build configuration list for PBXNativeTarget "AutoPark_GOATS_UserApplicationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF293263252B84AD00850D83 /* Debug */,
+				BF293264252B84AD00850D83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BF29323B252B84AB00850D83 /* AutoPark_GOATS_UserApplication.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BF29323C252B84AB00850D83 /* AutoPark_GOATS_UserApplication.xcdatamodel */,
+			);
+			currentVersion = BF29323C252B84AB00850D83 /* AutoPark_GOATS_UserApplication.xcdatamodel */;
+			path = AutoPark_GOATS_UserApplication.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BF293227252B84AB00850D83 /* Project object */;
+}
