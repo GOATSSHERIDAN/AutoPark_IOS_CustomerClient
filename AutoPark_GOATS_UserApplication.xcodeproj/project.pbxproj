@@ -77,12 +77,15 @@
 		BF90AA19252BA78000781CC2 /* UserMainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMainPageViewController.swift; sourceTree = "<group>"; };
 		BF90AA1E252BB73E00781CC2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 <<<<<<< HEAD
+<<<<<<< HEAD
 		BFEC4001252F83440051F2A1 /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
 		BFEC4063252FA45D0051F2A1 /* VerifyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyAPI.swift; sourceTree = "<group>"; };
 		D34E2A4DACF22D23D491F6C3 /* Pods-AutoPark_GOATS_UserApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPark_GOATS_UserApplication.debug.xcconfig"; path = "Target Support Files/Pods-AutoPark_GOATS_UserApplication/Pods-AutoPark_GOATS_UserApplication.debug.xcconfig"; sourceTree = "<group>"; };
 		D51D187037CD7A55CF06525E /* Pods-AutoPark_GOATS_UserApplicationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPark_GOATS_UserApplicationTests.debug.xcconfig"; path = "Target Support Files/Pods-AutoPark_GOATS_UserApplicationTests/Pods-AutoPark_GOATS_UserApplicationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FD9F5BAF2F78F8E8D90C17B3 /* Pods_AutoPark_GOATS_UserApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoPark_GOATS_UserApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 =======
+=======
+>>>>>>> parent of 7caf31e... week4 update(SMS verification)
 		C74F08B754D4CDABAD1A7DED /* Pods_AutoPark_GOATS_UserApplicationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoPark_GOATS_UserApplicationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D719FA239261ADE5B52E26 /* Pods-AutoPark_GOATS_UserApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPark_GOATS_UserApplication.debug.xcconfig"; path = "Target Support Files/Pods-AutoPark_GOATS_UserApplication/Pods-AutoPark_GOATS_UserApplication.debug.xcconfig"; sourceTree = "<group>"; };
 		FC5A2DD5115484A360C6C0D2 /* Pods-AutoPark_GOATS_UserApplicationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPark_GOATS_UserApplicationTests.debug.xcconfig"; path = "Target Support Files/Pods-AutoPark_GOATS_UserApplicationTests/Pods-AutoPark_GOATS_UserApplicationTests.debug.xcconfig"; sourceTree = "<group>"; };
