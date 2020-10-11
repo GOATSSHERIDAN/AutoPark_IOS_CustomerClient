@@ -6,14 +6,19 @@
 //
 
 import UIKit
-import FirebaseDatabase
+import FirebaseFirestore
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let ref = Database.database().reference()
-        ref.child("Users/1/LicensePlate").setValue("CDJJCNM")
+       // let ref = Database.database().reference()
+        
+        //ref.("Users/dave1/firstName").setValue("CDJJCNM")
+        let db = Firestore.firestore()
+        db.collection("Users").document("dave1").setData(["lastName":"hahaha"])
+        
     }
 
     @IBAction func unwindToHomeViewController(sender : UIStoryboardSegue){

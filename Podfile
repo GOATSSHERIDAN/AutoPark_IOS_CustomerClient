@@ -20,6 +20,8 @@ pod 'Firebase/Core'
 pod 'Firebase/Database'
 # add the Firebase pod for Google Analytics
 pod 'Firebase/Analytics'
+
+# pod 'Firebase/Firestore'
 # add pods for any other desired Firebase products
 # https://firebase.google.com/docs/ios/setup#available-pods
 

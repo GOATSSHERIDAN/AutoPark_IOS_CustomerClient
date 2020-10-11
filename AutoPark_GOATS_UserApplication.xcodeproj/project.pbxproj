@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		055FCA70363DEE1B28371896 /* Pods_AutoPark_GOATS_UserApplicationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C74F08B754D4CDABAD1A7DED /* Pods_AutoPark_GOATS_UserApplicationTests.framework */; };
-		7C4CC2F0D724A2029E7AF618 /* Pods_AutoPark_GOATS_UserApplication_AutoPark_GOATS_UserApplicationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834E6CA57F11A44F0B1131D0 /* Pods_AutoPark_GOATS_UserApplication_AutoPark_GOATS_UserApplicationUITests.framework */; };
-		97A6B7572811CA584D8F1239 /* Pods_AutoPark_GOATS_UserApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD0FC3FAA6661C3E78CD220 /* Pods_AutoPark_GOATS_UserApplication.framework */; };
-		BF134D26252C262E004883CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF134D25252C262E004883CD /* GoogleService-Info.plist */; };
+		62EF25F63451C1BDD00EC9B5 /* Pods_AutoPark_GOATS_UserApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD9F5BAF2F78F8E8D90C17B3 /* Pods_AutoPark_GOATS_UserApplication.framework */; };
+		8D214BF06A67346CC0C30A84 /* Pods_AutoPark_GOATS_UserApplication_AutoPark_GOATS_UserApplicationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BE94F3984DBFD35EB015D8 /* Pods_AutoPark_GOATS_UserApplication_AutoPark_GOATS_UserApplicationUITests.framework */; };
+		B4EA0B5682D30593D07C06E3 /* Pods_AutoPark_GOATS_UserApplicationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ACA7F8AB07DFE1F1D8C01EA /* Pods_AutoPark_GOATS_UserApplicationTests.framework */; };
+		BF0C01F32532A5A600D5E80A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF0C01F22532A5A600D5E80A /* GoogleService-Info.plist */; };
 		BF293233252B84AB00850D83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF293232252B84AB00850D83 /* AppDelegate.swift */; };
 		BF293235252B84AB00850D83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF293234252B84AB00850D83 /* SceneDelegate.swift */; };
 		BF293237252B84AB00850D83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF293236252B84AB00850D83 /* ViewController.swift */; };
@@ -49,12 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6496E1726B40F2E8D866A5D6 /* Pods-AutoPark_GOATS_UserApplicationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPark_GOATS_UserApplicationTests.release.xcconfig"; path = "Target Support Files/Pods-AutoPark_GOATS_UserApplicationTests/Pods-AutoPark_GOATS_UserApplicationTests.release.xcconfig"; sourceTree = "<group>"; };
-		834E6CA57F11A44F0B1131D0 /* Pods_AutoPark_GOATS_UserApplication_AutoPark_GOATS_UserApplicationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoPark_GOATS_UserApplication_AutoPark_GOATS_UserApplicationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93CCAC0429EAC6D7AB16BDAD /* Pods-AutoPark_GOATS_UserApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPark_GOATS_UserApplication.release.xcconfig"; path = "Target Support Files/Pods-AutoPark_GOATS_UserApplication/Pods-AutoPark_GOATS_UserApplication.release.xcconfig"; sourceTree = "<group>"; };
-		966BDBCC63D136F79063D200 /* Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests.debug.xcconfig"; path = "Target Support Files/Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests/Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		BCD0FC3FAA6661C3E78CD220 /* Pods_AutoPark_GOATS_UserApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoPark_GOATS_UserApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF134D25252C262E004883CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3B9C9764136480770E9A563A /* Pods-AutoPark_GOATS_UserApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPark_GOATS_UserApplication.release.xcconfig"; path = "Target Support Files/Pods-AutoPark_GOATS_UserApplication/Pods-AutoPark_GOATS_UserApplication.release.xcconfig"; sourceTree = "<group>"; };
+		3F0782CF0C0C1150A529831C /* Pods-AutoPark_GOATS_UserApplicationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPark_GOATS_UserApplicationTests.release.xcconfig"; path = "Target Support Files/Pods-AutoPark_GOATS_UserApplicationTests/Pods-AutoPark_GOATS_UserApplicationTests.release.xcconfig"; sourceTree = "<group>"; };
+		5A0DA42B4355C30B342D5A1C /* Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests.debug.xcconfig"; path = "Target Support Files/Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests/Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6ACA7F8AB07DFE1F1D8C01EA /* Pods_AutoPark_GOATS_UserApplicationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoPark_GOATS_UserApplicationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91BE94F3984DBFD35EB015D8 /* Pods_AutoPark_GOATS_UserApplication_AutoPark_GOATS_UserApplicationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoPark_GOATS_UserApplication_AutoPark_GOATS_UserApplicationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F66EA95ECEB3B7A68CA960C /* Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests.release.xcconfig"; path = "Target Support Files/Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests/Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BF0C01F22532A5A600D5E80A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BF29322F252B84AB00850D83 /* AutoPark_GOATS_UserApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoPark_GOATS_UserApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF293232252B84AB00850D83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF293234252B84AB00850D83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,10 +80,9 @@
 		BF90AA1E252BB73E00781CC2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BFEC4001252F83440051F2A1 /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
 		BFEC4063252FA45D0051F2A1 /* VerifyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyAPI.swift; sourceTree = "<group>"; };
-		C74F08B754D4CDABAD1A7DED /* Pods_AutoPark_GOATS_UserApplicationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoPark_GOATS_UserApplicationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8D719FA239261ADE5B52E26 /* Pods-AutoPark_GOATS_UserApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPark_GOATS_UserApplication.debug.xcconfig"; path = "Target Support Files/Pods-AutoPark_GOATS_UserApplication/Pods-AutoPark_GOATS_UserApplication.debug.xcconfig"; sourceTree = "<group>"; };
-		FC5A2DD5115484A360C6C0D2 /* Pods-AutoPark_GOATS_UserApplicationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPark_GOATS_UserApplicationTests.debug.xcconfig"; path = "Target Support Files/Pods-AutoPark_GOATS_UserApplicationTests/Pods-AutoPark_GOATS_UserApplicationTests.debug.xcconfig"; sourceTree = "<group>"; };
-		FE12C4FA1E19637C2BA25CF0 /* Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests.release.xcconfig"; path = "Target Support Files/Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests/Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D34E2A4DACF22D23D491F6C3 /* Pods-AutoPark_GOATS_UserApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPark_GOATS_UserApplication.debug.xcconfig"; path = "Target Support Files/Pods-AutoPark_GOATS_UserApplication/Pods-AutoPark_GOATS_UserApplication.debug.xcconfig"; sourceTree = "<group>"; };
+		D51D187037CD7A55CF06525E /* Pods-AutoPark_GOATS_UserApplicationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPark_GOATS_UserApplicationTests.debug.xcconfig"; path = "Target Support Files/Pods-AutoPark_GOATS_UserApplicationTests/Pods-AutoPark_GOATS_UserApplicationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FD9F5BAF2F78F8E8D90C17B3 /* Pods_AutoPark_GOATS_UserApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoPark_GOATS_UserApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97A6B7572811CA584D8F1239 /* Pods_AutoPark_GOATS_UserApplication.framework in Frameworks */,
+				62EF25F63451C1BDD00EC9B5 /* Pods_AutoPark_GOATS_UserApplication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				055FCA70363DEE1B28371896 /* Pods_AutoPark_GOATS_UserApplicationTests.framework in Frameworks */,
+				B4EA0B5682D30593D07C06E3 /* Pods_AutoPark_GOATS_UserApplicationTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C4CC2F0D724A2029E7AF618 /* Pods_AutoPark_GOATS_UserApplication_AutoPark_GOATS_UserApplicationUITests.framework in Frameworks */,
+				8D214BF06A67346CC0C30A84 /* Pods_AutoPark_GOATS_UserApplication_AutoPark_GOATS_UserApplicationUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,24 +116,14 @@
 		1E5029D0E8BF6D3D3D5FBB4B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F8D719FA239261ADE5B52E26 /* Pods-AutoPark_GOATS_UserApplication.debug.xcconfig */,
-				93CCAC0429EAC6D7AB16BDAD /* Pods-AutoPark_GOATS_UserApplication.release.xcconfig */,
-				966BDBCC63D136F79063D200 /* Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests.debug.xcconfig */,
-				FE12C4FA1E19637C2BA25CF0 /* Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests.release.xcconfig */,
-				FC5A2DD5115484A360C6C0D2 /* Pods-AutoPark_GOATS_UserApplicationTests.debug.xcconfig */,
-				6496E1726B40F2E8D866A5D6 /* Pods-AutoPark_GOATS_UserApplicationTests.release.xcconfig */,
+				D34E2A4DACF22D23D491F6C3 /* Pods-AutoPark_GOATS_UserApplication.debug.xcconfig */,
+				3B9C9764136480770E9A563A /* Pods-AutoPark_GOATS_UserApplication.release.xcconfig */,
+				5A0DA42B4355C30B342D5A1C /* Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests.debug.xcconfig */,
+				9F66EA95ECEB3B7A68CA960C /* Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests.release.xcconfig */,
+				D51D187037CD7A55CF06525E /* Pods-AutoPark_GOATS_UserApplicationTests.debug.xcconfig */,
+				3F0782CF0C0C1150A529831C /* Pods-AutoPark_GOATS_UserApplicationTests.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		B22A5BC9B8DABF42342913FA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BCD0FC3FAA6661C3E78CD220 /* Pods_AutoPark_GOATS_UserApplication.framework */,
-				834E6CA57F11A44F0B1131D0 /* Pods_AutoPark_GOATS_UserApplication_AutoPark_GOATS_UserApplicationUITests.framework */,
-				C74F08B754D4CDABAD1A7DED /* Pods_AutoPark_GOATS_UserApplicationTests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BF293226252B84AB00850D83 = {
@@ -144,7 +134,7 @@
 				BF293256252B84AD00850D83 /* AutoPark_GOATS_UserApplicationUITests */,
 				BF293230252B84AB00850D83 /* Products */,
 				1E5029D0E8BF6D3D3D5FBB4B /* Pods */,
-				B22A5BC9B8DABF42342913FA /* Frameworks */,
+				C2F6F21BC8F02AF531739DE8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,7 +151,7 @@
 		BF293231252B84AB00850D83 /* AutoPark_GOATS_UserApplication */ = {
 			isa = PBXGroup;
 			children = (
-				BF134D25252C262E004883CD /* GoogleService-Info.plist */,
+				BF0C01F22532A5A600D5E80A /* GoogleService-Info.plist */,
 				BF293243252B84AC00850D83 /* Info.plist */,
 				BF29326E252B876200850D83 /* Assets */,
 				BF29326D252B875600850D83 /* Classes */,
@@ -249,6 +239,16 @@
 			path = Audios;
 			sourceTree = "<group>";
 		};
+		C2F6F21BC8F02AF531739DE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD9F5BAF2F78F8E8D90C17B3 /* Pods_AutoPark_GOATS_UserApplication.framework */,
+				91BE94F3984DBFD35EB015D8 /* Pods_AutoPark_GOATS_UserApplication_AutoPark_GOATS_UserApplicationUITests.framework */,
+				6ACA7F8AB07DFE1F1D8C01EA /* Pods_AutoPark_GOATS_UserApplicationTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -256,11 +256,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF29325C252B84AD00850D83 /* Build configuration list for PBXNativeTarget "AutoPark_GOATS_UserApplication" */;
 			buildPhases = (
-				B672511F1A0409DBDFAF9A10 /* [CP] Check Pods Manifest.lock */,
+				4271C68B8991285517BA1BAC /* [CP] Check Pods Manifest.lock */,
 				BF29322B252B84AB00850D83 /* Sources */,
 				BF29322C252B84AB00850D83 /* Frameworks */,
 				BF29322D252B84AB00850D83 /* Resources */,
-				05DC4EFD9C69159E5C90BB0B /* [CP] Embed Pods Frameworks */,
+				C1888A1E63E16DB8C64A3CB6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -275,7 +275,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF29325F252B84AD00850D83 /* Build configuration list for PBXNativeTarget "AutoPark_GOATS_UserApplicationTests" */;
 			buildPhases = (
-				0F5473E592AA2AB09E20DDAB /* [CP] Check Pods Manifest.lock */,
+				B50F6434A7891D660899A096 /* [CP] Check Pods Manifest.lock */,
 				BF293244252B84AD00850D83 /* Sources */,
 				BF293245252B84AD00850D83 /* Frameworks */,
 				BF293246252B84AD00850D83 /* Resources */,
@@ -294,11 +294,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF293262252B84AD00850D83 /* Build configuration list for PBXNativeTarget "AutoPark_GOATS_UserApplicationUITests" */;
 			buildPhases = (
-				391CFF9B7205687880F44F57 /* [CP] Check Pods Manifest.lock */,
+				86E4AB52AA92AA33E6241740 /* [CP] Check Pods Manifest.lock */,
 				BF29324F252B84AD00850D83 /* Sources */,
 				BF293250252B84AD00850D83 /* Frameworks */,
 				BF293251252B84AD00850D83 /* Resources */,
-				99B04D7047960701AE145CD0 /* [CP] Embed Pods Frameworks */,
+				608941C9FB4729BFC4D90222 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -358,8 +358,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF293242252B84AC00850D83 /* LaunchScreen.storyboard in Resources */,
-				BF134D26252C262E004883CD /* GoogleService-Info.plist in Resources */,
 				BF29323F252B84AC00850D83 /* Assets.xcassets in Resources */,
+				BF0C01F32532A5A600D5E80A /* GoogleService-Info.plist in Resources */,
 				BF29323A252B84AB00850D83 /* Main.storyboard in Resources */,
 				BFEC4002252F83440051F2A1 /* config.plist in Resources */,
 			);
@@ -382,24 +382,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		05DC4EFD9C69159E5C90BB0B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AutoPark_GOATS_UserApplication/Pods-AutoPark_GOATS_UserApplication-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AutoPark_GOATS_UserApplication/Pods-AutoPark_GOATS_UserApplication-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AutoPark_GOATS_UserApplication/Pods-AutoPark_GOATS_UserApplication-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		0F5473E592AA2AB09E20DDAB /* [CP] Check Pods Manifest.lock */ = {
+		4271C68B8991285517BA1BAC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -414,14 +397,31 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AutoPark_GOATS_UserApplicationTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-AutoPark_GOATS_UserApplication-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		391CFF9B7205687880F44F57 /* [CP] Check Pods Manifest.lock */ = {
+		608941C9FB4729BFC4D90222 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests/Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests/Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests/Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86E4AB52AA92AA33E6241740 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -443,24 +443,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		99B04D7047960701AE145CD0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests/Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests/Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests/Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B672511F1A0409DBDFAF9A10 /* [CP] Check Pods Manifest.lock */ = {
+		B50F6434A7891D660899A096 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -475,11 +458,28 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AutoPark_GOATS_UserApplication-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-AutoPark_GOATS_UserApplicationTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1888A1E63E16DB8C64A3CB6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AutoPark_GOATS_UserApplication/Pods-AutoPark_GOATS_UserApplication-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AutoPark_GOATS_UserApplication/Pods-AutoPark_GOATS_UserApplication-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AutoPark_GOATS_UserApplication/Pods-AutoPark_GOATS_UserApplication-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -673,7 +673,7 @@
 		};
 		BF29325D252B84AD00850D83 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8D719FA239261ADE5B52E26 /* Pods-AutoPark_GOATS_UserApplication.debug.xcconfig */;
+			baseConfigurationReference = D34E2A4DACF22D23D491F6C3 /* Pods-AutoPark_GOATS_UserApplication.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -692,7 +692,7 @@
 		};
 		BF29325E252B84AD00850D83 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93CCAC0429EAC6D7AB16BDAD /* Pods-AutoPark_GOATS_UserApplication.release.xcconfig */;
+			baseConfigurationReference = 3B9C9764136480770E9A563A /* Pods-AutoPark_GOATS_UserApplication.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -711,7 +711,7 @@
 		};
 		BF293260252B84AD00850D83 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC5A2DD5115484A360C6C0D2 /* Pods-AutoPark_GOATS_UserApplicationTests.debug.xcconfig */;
+			baseConfigurationReference = D51D187037CD7A55CF06525E /* Pods-AutoPark_GOATS_UserApplicationTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -733,7 +733,7 @@
 		};
 		BF293261252B84AD00850D83 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6496E1726B40F2E8D866A5D6 /* Pods-AutoPark_GOATS_UserApplicationTests.release.xcconfig */;
+			baseConfigurationReference = 3F0782CF0C0C1150A529831C /* Pods-AutoPark_GOATS_UserApplicationTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -755,7 +755,7 @@
 		};
 		BF293263252B84AD00850D83 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 966BDBCC63D136F79063D200 /* Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests.debug.xcconfig */;
+			baseConfigurationReference = 5A0DA42B4355C30B342D5A1C /* Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -775,7 +775,7 @@
 		};
 		BF293264252B84AD00850D83 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE12C4FA1E19637C2BA25CF0 /* Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests.release.xcconfig */;
+			baseConfigurationReference = 9F66EA95ECEB3B7A68CA960C /* Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
