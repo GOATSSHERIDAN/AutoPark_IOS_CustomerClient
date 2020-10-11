@@ -8,29 +8,14 @@
 import UIKit
 
 class PasswordRecoverViewController: UIViewController {
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
-    @IBOutlet var btnSendCode : UIButton!
-    @IBOutlet var btnSubmit : UIButton!
+    
 
-    @IBOutlet var countryCodeField : UITextField!
-    @IBOutlet var phoneNumberField : UITextField!
-    @IBOutlet var securyCodeField : UITextField!
-    
-    
-    @IBAction func sendSecuryCode(sender : UIButton){
-        let countryCode = countryCodeField.text
-        let phoneNumber = phoneNumberField.text
-        VerifyAPI.sendVerificationCode(countryCode!, phoneNumber!)
-        
-    }
-    
-    
-    
     /*
     // MARK: - Navigation
 

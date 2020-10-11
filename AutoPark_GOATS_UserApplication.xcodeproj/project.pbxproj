@@ -27,8 +27,6 @@
 		BF90AA15252BA5C300781CC2 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF90AA14252BA5C300781CC2 /* ResetPasswordViewController.swift */; };
 		BF90AA1A252BA78000781CC2 /* UserMainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF90AA19252BA78000781CC2 /* UserMainPageViewController.swift */; };
 		BF90AA1F252BB73E00781CC2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF90AA1E252BB73E00781CC2 /* User.swift */; };
-		BFEC4002252F83440051F2A1 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFEC4001252F83440051F2A1 /* config.plist */; };
-		BFEC4064252FA45D0051F2A1 /* VerifyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEC4063252FA45D0051F2A1 /* VerifyAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,11 +76,18 @@
 		BF90AA14252BA5C300781CC2 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		BF90AA19252BA78000781CC2 /* UserMainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMainPageViewController.swift; sourceTree = "<group>"; };
 		BF90AA1E252BB73E00781CC2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		BFEC4001252F83440051F2A1 /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
 		BFEC4063252FA45D0051F2A1 /* VerifyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyAPI.swift; sourceTree = "<group>"; };
 		D34E2A4DACF22D23D491F6C3 /* Pods-AutoPark_GOATS_UserApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPark_GOATS_UserApplication.debug.xcconfig"; path = "Target Support Files/Pods-AutoPark_GOATS_UserApplication/Pods-AutoPark_GOATS_UserApplication.debug.xcconfig"; sourceTree = "<group>"; };
 		D51D187037CD7A55CF06525E /* Pods-AutoPark_GOATS_UserApplicationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPark_GOATS_UserApplicationTests.debug.xcconfig"; path = "Target Support Files/Pods-AutoPark_GOATS_UserApplicationTests/Pods-AutoPark_GOATS_UserApplicationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FD9F5BAF2F78F8E8D90C17B3 /* Pods_AutoPark_GOATS_UserApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoPark_GOATS_UserApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+=======
+		C74F08B754D4CDABAD1A7DED /* Pods_AutoPark_GOATS_UserApplicationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoPark_GOATS_UserApplicationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8D719FA239261ADE5B52E26 /* Pods-AutoPark_GOATS_UserApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPark_GOATS_UserApplication.debug.xcconfig"; path = "Target Support Files/Pods-AutoPark_GOATS_UserApplication/Pods-AutoPark_GOATS_UserApplication.debug.xcconfig"; sourceTree = "<group>"; };
+		FC5A2DD5115484A360C6C0D2 /* Pods-AutoPark_GOATS_UserApplicationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPark_GOATS_UserApplicationTests.debug.xcconfig"; path = "Target Support Files/Pods-AutoPark_GOATS_UserApplicationTests/Pods-AutoPark_GOATS_UserApplicationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FE12C4FA1E19637C2BA25CF0 /* Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests.release.xcconfig"; path = "Target Support Files/Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests/Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests.release.xcconfig"; sourceTree = "<group>"; };
+>>>>>>> parent of 7caf31e... week4 update(SMS verification)
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +162,6 @@
 				BF29326D252B875600850D83 /* Classes */,
 				BF293269252B86EF00850D83 /* ViewControllers */,
 				BF293268252B86CE00850D83 /* StoryBoards */,
-				BFEC4001252F83440051F2A1 /* config.plist */,
 			);
 			path = AutoPark_GOATS_UserApplication;
 			sourceTree = "<group>";
@@ -209,7 +213,6 @@
 				BF293234252B84AB00850D83 /* SceneDelegate.swift */,
 				BF293232252B84AB00850D83 /* AppDelegate.swift */,
 				BF90AA1E252BB73E00781CC2 /* User.swift */,
-				BFEC4063252FA45D0051F2A1 /* VerifyAPI.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -361,7 +364,6 @@
 				BF29323F252B84AC00850D83 /* Assets.xcassets in Resources */,
 				BF0C01F32532A5A600D5E80A /* GoogleService-Info.plist in Resources */,
 				BF29323A252B84AB00850D83 /* Main.storyboard in Resources */,
-				BFEC4002252F83440051F2A1 /* config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,7 +500,6 @@
 				BF90AA0B252B9E8400781CC2 /* PasswordRecoverViewController.swift in Sources */,
 				BF293233252B84AB00850D83 /* AppDelegate.swift in Sources */,
 				BF293280252B892200850D83 /* SignInViewController.swift in Sources */,
-				BFEC4064252FA45D0051F2A1 /* VerifyAPI.swift in Sources */,
 				BF293235252B84AB00850D83 /* SceneDelegate.swift in Sources */,
 				BF90AA1F252BB73E00781CC2 /* User.swift in Sources */,
 			);
