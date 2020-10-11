@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_AutoPark_GOATS_UserApplication_AutoPark_GOATS_UserApplicationUITests : NSObject
-@end
-@implementation PodsDummy_Pods_AutoPark_GOATS_UserApplication_AutoPark_GOATS_UserApplicationUITests
-@end

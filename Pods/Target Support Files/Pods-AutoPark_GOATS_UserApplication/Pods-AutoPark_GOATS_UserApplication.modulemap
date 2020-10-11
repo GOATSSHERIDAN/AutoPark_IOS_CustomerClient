@@ -1,6 +1,0 @@
-framework module Pods_AutoPark_GOATS_UserApplication {
-  umbrella header "Pods-AutoPark_GOATS_UserApplication-umbrella.h"
-
-  export *
-  module * { export * }
-}
