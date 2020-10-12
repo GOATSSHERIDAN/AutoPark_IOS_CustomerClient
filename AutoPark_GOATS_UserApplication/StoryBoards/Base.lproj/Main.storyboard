@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--User Main Page View Controller-->
         <scene sceneID="Lee-xl-XSR">
             <objects>
-                <viewController id="oSU-zg-iZn" sceneMemberID="viewController">
+                <viewController id="oSU-zg-iZn" customClass="UserMainPageViewController" customModule="AutoPark_GOATS_UserApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HTm-Rn-qpk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,6 +62,9 @@
                         <viewLayoutGuide key="safeArea" id="lYr-D8-RTh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="lbShowName" destination="foE-no-NF8" id="Wga-Rg-jBL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Je-ol-QzU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="cp5-Mq-TWz" userLabel="Exit" sceneMemberID="exit"/>
@@ -109,12 +112,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YQQ-q8-lgb">
-                                <rect key="frame" x="108" y="279" width="159" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uz3-Lu-uus">
                                 <rect key="frame" x="214" y="421" width="95" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -129,15 +126,25 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign in"/>
                                 <connections>
-                                    <segue destination="oSU-zg-iZn" kind="popoverPresentation" popoverAnchorView="6sJ-nw-iKB" id="15q-02-cug">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <action selector="doSignIn:" destination="RsH-ya-sNX" eventType="touchUpInside" id="kOM-Mk-TPT"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YQQ-q8-lgb">
+                                <rect key="frame" x="108" y="298" width="159" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bWz-cH-Fqi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="btnSignIn" destination="6sJ-nw-iKB" id="eqy-wE-B0b"/>
+                        <outlet property="passwordTextfield" destination="YQQ-q8-lgb" id="VTJ-lT-2ff"/>
+                        <outlet property="userIdTextField" destination="vE7-TD-5Gn" id="TdJ-eO-XSJ"/>
+                        <segue destination="oSU-zg-iZn" kind="presentation" identifier="goToMenu" id="s0f-aM-Gym"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6gG-B2-aZR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="DTA-WE-kOm" userLabel="Exit" sceneMemberID="exit"/>

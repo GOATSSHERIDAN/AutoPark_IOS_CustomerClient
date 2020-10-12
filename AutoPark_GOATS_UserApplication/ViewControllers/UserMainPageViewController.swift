@@ -9,9 +9,14 @@ import UIKit
 
 class UserMainPageViewController: UIViewController {
 
+    let mainDelegate = UIApplication.shared.delegate as! AppDelegate
+    
+    @IBOutlet weak var lbShowName: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(mainDelegate.signedUser)
+        lbShowName.text = mainDelegate.signedUser!["firstName"] as! String
         // Do any additional setup after loading the view.
     }
     

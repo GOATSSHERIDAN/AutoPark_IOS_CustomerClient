@@ -6,16 +6,63 @@
 //
 
 import UIKit
+import FirebaseFirestore
+
 
 class SignInViewController: UIViewController {
 
+    @IBOutlet weak var userIdTextField: UITextField!
+    @IBOutlet weak var passwordTextfield: UITextField!
+    @IBOutlet weak var btnSignIn: UIButton!
+    
+    let mainDelegate = UIApplication.shared.delegate as! AppDelegate
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //let db = Firestore.firestore()
+        //db.collection("Users").document(userIdTextField.text!)
         // Do any additional setup after loading the view.
+        
     }
     
-
+    @IBAction func doSignIn(_ sender: UIButton) {
+        let db = Firestore.firestore()
+        let password = passwordTextfield.text!
+        
+        let newDoc = db.collection("Users").document(userIdTextField.text!).getDocument { (document, error) in
+            
+            if error == nil{
+                //check if user exist
+                if document != nil && document!.exists{
+                    let realDoc = document!.data()
+                    let realPassword = realDoc!["password"] as! String
+                    if realPassword == password{
+                        self.mainDelegate.signedUser = realDoc
+                        
+                        self.performSegue(withIdentifier: "goToMenu", sender: nil)
+                    }else{
+                        let alertController = UIAlertController(title: "Error", message: "Invalid Password, Please re-try!", preferredStyle: .alert)
+                        let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                        
+                        alertController.addAction(cancelAction)
+                        self.present(alertController,animated: true)
+                    }
+                }else{
+                    let alertController = UIAlertController(title: "Error", message: "User ID not exist, Please re-try!", preferredStyle: .alert)
+                    let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    
+                    alertController.addAction(cancelAction)
+                    self.present(alertController,animated: true)
+                    
+                }
+            }else{
+                print(error)
+            }
+            
+        }
+        
+    }
+    
     /*
     // MARK: - Navigation
 
