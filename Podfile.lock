@@ -265,6 +265,7 @@ PODS:
     - nanopb (~> 0.3)
   - gRPC-Core/Interface (1.21.0)
   - leveldb-library (1.22)
+  - mailcore2-ios (0.6.4)
   - nanopb (0.3.9011):
     - nanopb/decode (= 0.3.9011)
     - nanopb/encode (= 0.3.9011)
@@ -277,6 +278,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - Firebase/Firestore
+  - mailcore2-ios
 
 SPEC REPOS:
   trunk:
@@ -298,6 +300,7 @@ SPEC REPOS:
     - "gRPC-C++"
     - gRPC-Core
     - leveldb-library
+    - mailcore2-ios
     - nanopb
     - PromisesObjC
 
@@ -320,9 +323,10 @@ SPEC CHECKSUMS:
   "gRPC-C++": 9dfe7b44821e7b3e44aacad2af29d2c21f7cde83
   gRPC-Core: c9aef9a261a1247e881b18059b84d597293c9947
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
+  mailcore2-ios: 3ff0be2fa553d4da9c11d39c11d51863c768f24f
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
 
-PODFILE CHECKSUM: 98c5b0c2fea377961da9f8269caa3ee1641ad812
+PODFILE CHECKSUM: fbd5c7a4fac083348648a314395aae03b9f2e534
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3

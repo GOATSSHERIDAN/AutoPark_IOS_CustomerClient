@@ -27,6 +27,7 @@
 		BF90AA15252BA5C300781CC2 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF90AA14252BA5C300781CC2 /* ResetPasswordViewController.swift */; };
 		BF90AA1A252BA78000781CC2 /* UserMainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF90AA19252BA78000781CC2 /* UserMainPageViewController.swift */; };
 		BF90AA1F252BB73E00781CC2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF90AA1E252BB73E00781CC2 /* User.swift */; };
+		BFE35EE4253A71E3009C6BFD /* VerifyEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE35EE3253A71E3009C6BFD /* VerifyEmailViewController.swift */; };
 		BFEC4002252F83440051F2A1 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFEC4001252F83440051F2A1 /* config.plist */; };
 		BFEC4064252FA45D0051F2A1 /* VerifyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEC4063252FA45D0051F2A1 /* VerifyAPI.swift */; };
 /* End PBXBuildFile section */
@@ -77,6 +78,8 @@
 		BF90AA14252BA5C300781CC2 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		BF90AA19252BA78000781CC2 /* UserMainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMainPageViewController.swift; sourceTree = "<group>"; };
 		BF90AA1E252BB73E00781CC2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BFE35EDF253A5887009C6BFD /* sendEmail_bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sendEmail_bridge.h; sourceTree = "<group>"; };
+		BFE35EE3253A71E3009C6BFD /* VerifyEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyEmailViewController.swift; sourceTree = "<group>"; };
 		BFEC4001252F83440051F2A1 /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
 		BFEC4063252FA45D0051F2A1 /* VerifyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyAPI.swift; sourceTree = "<group>"; };
 		C74F08B754D4CDABAD1A7DED /* Pods_AutoPark_GOATS_UserApplicationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoPark_GOATS_UserApplicationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +164,7 @@
 		BF293231252B84AB00850D83 /* AutoPark_GOATS_UserApplication */ = {
 			isa = PBXGroup;
 			children = (
+				BFE35EDF253A5887009C6BFD /* sendEmail_bridge.h */,
 				BF07D9C32535DE6300BC16D3 /* GoogleService-Info.plist */,
 				BF293243252B84AC00850D83 /* Info.plist */,
 				BF29326E252B876200850D83 /* Assets */,
@@ -209,6 +213,7 @@
 				BF90AA0F252BA3EA00781CC2 /* SuccessfullySignUpViewController.swift */,
 				BF90AA14252BA5C300781CC2 /* ResetPasswordViewController.swift */,
 				BF90AA19252BA78000781CC2 /* UserMainPageViewController.swift */,
+				BFE35EE3253A71E3009C6BFD /* VerifyEmailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -499,6 +504,7 @@
 				BF293233252B84AB00850D83 /* AppDelegate.swift in Sources */,
 				BF293280252B892200850D83 /* SignInViewController.swift in Sources */,
 				BFEC4064252FA45D0051F2A1 /* VerifyAPI.swift in Sources */,
+				BFE35EE4253A71E3009C6BFD /* VerifyEmailViewController.swift in Sources */,
 				BF293235252B84AB00850D83 /* SceneDelegate.swift in Sources */,
 				BF90AA1F252BB73E00781CC2 /* User.swift in Sources */,
 			);
@@ -678,6 +684,33 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BoringSSL-GRPC/openssl_grpc.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore/FirebaseCore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseDatabase/FirebaseDatabase.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/FirebaseFirestore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations/FirebaseInstallations.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport/GoogleDataTransport.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransportCCTSupport/GoogleDataTransportCCTSupport.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities/GoogleUtilities.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC/FBLPromises.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/abseil/absl.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/grpcpp.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-Core/grpc.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/leveldb-library/leveldb.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb/nanopb.framework/Headers\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAuthInterop\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCoreDiagnosticsInterop\"",
+					"\"${PODS_ROOT}/Headers/Public/mailcore2-ios/MailCore\"",
+					"\"${PODS_ROOT}/Headers/Public/mailcore2-ios\"",
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/CoreOnly/Sources",
+					"\"${PODS_TARGET_SRCROOT}/Sources/FBLPromises/include\"",
+				);
 				INFOPLIST_FILE = AutoPark_GOATS_UserApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -685,6 +718,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.sheridancollege.AutoPark-GOATS-UserApplication";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AutoPark_GOATS_UserApplication/sendEmail_bridge.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -697,6 +731,33 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BoringSSL-GRPC/openssl_grpc.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore/FirebaseCore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseDatabase/FirebaseDatabase.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/FirebaseFirestore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations/FirebaseInstallations.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport/GoogleDataTransport.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransportCCTSupport/GoogleDataTransportCCTSupport.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities/GoogleUtilities.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC/FBLPromises.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/abseil/absl.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/grpcpp.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-Core/grpc.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/leveldb-library/leveldb.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb/nanopb.framework/Headers\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAuthInterop\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCoreDiagnosticsInterop\"",
+					"\"${PODS_ROOT}/Headers/Public/mailcore2-ios/MailCore\"",
+					"\"${PODS_ROOT}/Headers/Public/mailcore2-ios\"",
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/CoreOnly/Sources",
+					"\"${PODS_TARGET_SRCROOT}/Sources/FBLPromises/include\"",
+				);
 				INFOPLIST_FILE = AutoPark_GOATS_UserApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -704,6 +765,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.sheridancollege.AutoPark-GOATS-UserApplication";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AutoPark_GOATS_UserApplication/sendEmail_bridge.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

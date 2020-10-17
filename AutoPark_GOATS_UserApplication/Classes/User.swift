@@ -8,14 +8,16 @@
 import UIKit
 
 class User: NSObject {
-    var id:Int
+    var userId:String
+    var password:String
     var firstName:String
     var lastName:String
     var email: String
-    var phoneNumber: Int32
+    var phoneNumber: String
     
-    init(id : Int, firstName: String, lastName: String, email: String, phoneNumber: Int32) {
-        self.id = id
+    init(userId : String,password:String, firstName: String, lastName: String, email: String, phoneNumber: String) {
+        self.userId = userId
+        self.password = password
         self.firstName = firstName
         self.lastName = lastName
         self.email = email

@@ -3558,6 +3558,16 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
+			<string>&lt;html&gt;&lt;body&gt;You are being &lt;a href="https://raw.githubusercontent.com/MailCore/mailcore2/master/LICENSE"&gt;redirected&lt;/a&gt;.&lt;/body&gt;&lt;/html&gt;</string>
+			<key>License</key>
+			<string>BSD</string>
+			<key>Title</key>
+			<string>mailcore2-ios</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
 			<string>Copyright (c) 2011 Petteri Aimonen &lt;jpa at nanopb.mail.kapsi.fi&gt;
 
 This software is provided 'as-is', without any express or 
