@@ -6,9 +6,15 @@
 //
 
 import UIKit
-
+import FirebaseFirestore
 class ResetPasswordViewController: UIViewController {
 
+    let mainDelegate = UIApplication.shared.delegate as! AppDelegate
+    
+    @IBOutlet weak var tfPassword: UITextField!
+    @IBOutlet weak var reTypePassword: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,6 +22,41 @@ class ResetPasswordViewController: UIViewController {
     }
     
 
+    @IBAction func doUpdate(_ sender: Any) {
+        
+        if tfPassword.text!.isEmpty || reTypePassword.text!.isEmpty
+        {
+            let alertController = UIAlertController(title: "Error", message: "Please fill all!", preferredStyle: .alert)
+            let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            
+            alertController.addAction(cancelAction)
+            self.present(alertController,animated: true)
+        }else{
+            if tfPassword.text! != reTypePassword.text!{
+                let alertController = UIAlertController(title: "Error", message: "Please check your password!", preferredStyle: .alert)
+                let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                
+                alertController.addAction(cancelAction)
+                self.present(alertController,animated: true)
+            }else{
+                let userId = mainDelegate.resetPasswordFor ?? ""
+                var userInfo = mainDelegate.resetPasswordDoc ?? [" ":" "]
+                userInfo["password"] = tfPassword.text ?? ""
+                let db = Firestore.firestore()
+                db.collection("Users").document(userId).setData(userInfo)
+                let alertController = UIAlertController(title: "Successful", message: "Password updated", preferredStyle: .alert)
+                let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                
+                alertController.addAction(cancelAction)
+                self.present(alertController,animated: true)
+                
+                // do a unwind 
+                }
+            }
+    }
+    
+    
+    
     /*
     // MARK: - Navigation
 
