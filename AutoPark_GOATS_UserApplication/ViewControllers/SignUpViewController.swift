@@ -113,7 +113,7 @@ class SignUpViewController: UIViewController {
                 }
                 let builder = MCOMessageBuilder()
         
-                builder.header.to = [MCOAddress(displayName: "New User", mailbox: destEmail)]
+        builder.header.to = [MCOAddress(displayName: "New User", mailbox: destEmail) as Any]
                 builder.header.from = MCOAddress(displayName: "GOATSTEAM", mailbox: "goatsteam.2020@gmail.com")
                 builder.header.subject = "EMAIL VERIFICATION-AUTOPARK_GOATS"
                 builder.htmlBody="<p>Your email verification code is \(verificationCode)</p>"
@@ -122,7 +122,7 @@ class SignUpViewController: UIViewController {
                 let sendOperation = smtpSession.sendOperation(with: rfc822Data)
                 sendOperation?.start { (error) -> Void in
                     if (error != nil) {
-                        print("Error sending email: \(error)")
+                        print("Error sending email: \(String(describing: error))")
                     } else {
                         print("Successfully sent email!")
                     }
