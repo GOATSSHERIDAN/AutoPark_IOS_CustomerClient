@@ -10,7 +10,6 @@
 		055FCA70363DEE1B28371896 /* Pods_AutoPark_GOATS_UserApplicationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C74F08B754D4CDABAD1A7DED /* Pods_AutoPark_GOATS_UserApplicationTests.framework */; };
 		7C4CC2F0D724A2029E7AF618 /* Pods_AutoPark_GOATS_UserApplication_AutoPark_GOATS_UserApplicationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834E6CA57F11A44F0B1131D0 /* Pods_AutoPark_GOATS_UserApplication_AutoPark_GOATS_UserApplicationUITests.framework */; };
 		97A6B7572811CA584D8F1239 /* Pods_AutoPark_GOATS_UserApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD0FC3FAA6661C3E78CD220 /* Pods_AutoPark_GOATS_UserApplication.framework */; };
-		BF07D9C42535DE6300BC16D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF07D9C32535DE6300BC16D3 /* GoogleService-Info.plist */; };
 		BF293233252B84AB00850D83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF293232252B84AB00850D83 /* AppDelegate.swift */; };
 		BF293235252B84AB00850D83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF293234252B84AB00850D83 /* SceneDelegate.swift */; };
 		BF293237252B84AB00850D83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF293236252B84AB00850D83 /* ViewController.swift */; };
@@ -22,6 +21,8 @@
 		BF293258252B84AD00850D83 /* AutoPark_GOATS_UserApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF293257252B84AD00850D83 /* AutoPark_GOATS_UserApplicationUITests.swift */; };
 		BF293280252B892200850D83 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF29327F252B892200850D83 /* SignInViewController.swift */; };
 		BF293286252B8AD800850D83 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF293285252B8AD700850D83 /* SignUpViewController.swift */; };
+		BF71E796254A68AE0008052F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF71E795254A68AE0008052F /* GoogleService-Info.plist */; };
+		BF71E857254A761B0008052F /* PayWithoutSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF71E856254A761B0008052F /* PayWithoutSignInViewController.swift */; };
 		BF90AA0B252B9E8400781CC2 /* PasswordRecoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF90AA0A252B9E8400781CC2 /* PasswordRecoverViewController.swift */; };
 		BF90AA10252BA3EA00781CC2 /* SuccessfullySignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF90AA0F252BA3EA00781CC2 /* SuccessfullySignUpViewController.swift */; };
 		BF90AA15252BA5C300781CC2 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF90AA14252BA5C300781CC2 /* ResetPasswordViewController.swift */; };
@@ -55,7 +56,6 @@
 		93CCAC0429EAC6D7AB16BDAD /* Pods-AutoPark_GOATS_UserApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPark_GOATS_UserApplication.release.xcconfig"; path = "Target Support Files/Pods-AutoPark_GOATS_UserApplication/Pods-AutoPark_GOATS_UserApplication.release.xcconfig"; sourceTree = "<group>"; };
 		966BDBCC63D136F79063D200 /* Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests.debug.xcconfig"; path = "Target Support Files/Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests/Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BCD0FC3FAA6661C3E78CD220 /* Pods_AutoPark_GOATS_UserApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoPark_GOATS_UserApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF07D9C32535DE6300BC16D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BF29322F252B84AB00850D83 /* AutoPark_GOATS_UserApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoPark_GOATS_UserApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF293232252B84AB00850D83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF293234252B84AB00850D83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +73,9 @@
 		BF293259252B84AD00850D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF29327F252B892200850D83 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		BF293285252B8AD700850D83 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		BF71E75D254A5FAB0008052F /* AutoPark_GOATS_UserApplication.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoPark_GOATS_UserApplication.entitlements; sourceTree = "<group>"; };
+		BF71E795254A68AE0008052F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BF71E856254A761B0008052F /* PayWithoutSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWithoutSignInViewController.swift; sourceTree = "<group>"; };
 		BF90AA0A252B9E8400781CC2 /* PasswordRecoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoverViewController.swift; sourceTree = "<group>"; };
 		BF90AA0F252BA3EA00781CC2 /* SuccessfullySignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfullySignUpViewController.swift; sourceTree = "<group>"; };
 		BF90AA14252BA5C300781CC2 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
@@ -164,8 +167,9 @@
 		BF293231252B84AB00850D83 /* AutoPark_GOATS_UserApplication */ = {
 			isa = PBXGroup;
 			children = (
+				BF71E795254A68AE0008052F /* GoogleService-Info.plist */,
+				BF71E75D254A5FAB0008052F /* AutoPark_GOATS_UserApplication.entitlements */,
 				BFE35EDF253A5887009C6BFD /* sendEmail_bridge.h */,
-				BF07D9C32535DE6300BC16D3 /* GoogleService-Info.plist */,
 				BF293243252B84AC00850D83 /* Info.plist */,
 				BF29326E252B876200850D83 /* Assets */,
 				BF29326D252B875600850D83 /* Classes */,
@@ -214,6 +218,7 @@
 				BF90AA14252BA5C300781CC2 /* ResetPasswordViewController.swift */,
 				BF90AA19252BA78000781CC2 /* UserMainPageViewController.swift */,
 				BFE35EE3253A71E3009C6BFD /* VerifyEmailViewController.swift */,
+				BF71E856254A761B0008052F /* PayWithoutSignInViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -364,9 +369,9 @@
 			files = (
 				BF293242252B84AC00850D83 /* LaunchScreen.storyboard in Resources */,
 				BF29323F252B84AC00850D83 /* Assets.xcassets in Resources */,
+				BF71E796254A68AE0008052F /* GoogleService-Info.plist in Resources */,
 				BF29323A252B84AB00850D83 /* Main.storyboard in Resources */,
 				BFEC4002252F83440051F2A1 /* config.plist in Resources */,
-				BF07D9C42535DE6300BC16D3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,7 +394,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		05DC4EFD9C69159E5C90BB0B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -500,6 +505,7 @@
 				BF29323D252B84AB00850D83 /* AutoPark_GOATS_UserApplication.xcdatamodeld in Sources */,
 				BF90AA1A252BA78000781CC2 /* UserMainPageViewController.swift in Sources */,
 				BF90AA10252BA3EA00781CC2 /* SuccessfullySignUpViewController.swift in Sources */,
+				BF71E857254A761B0008052F /* PayWithoutSignInViewController.swift in Sources */,
 				BF90AA0B252B9E8400781CC2 /* PasswordRecoverViewController.swift in Sources */,
 				BF293233252B84AB00850D83 /* AppDelegate.swift in Sources */,
 				BF293280252B892200850D83 /* SignInViewController.swift in Sources */,
@@ -683,7 +689,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AutoPark_GOATS_UserApplication/AutoPark_GOATS_UserApplication.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 884ZB4BZD2;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/BoringSSL-GRPC/openssl_grpc.framework/Headers\"",
@@ -716,7 +724,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ca.sheridancollege.AutoPark-GOATS-UserApplication";
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.sheridancollege.AutoPark-GOATS-UserApplication-V2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AutoPark_GOATS_UserApplication/sendEmail_bridge.h";
 				SWIFT_VERSION = 5.0;
@@ -730,7 +738,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AutoPark_GOATS_UserApplication/AutoPark_GOATS_UserApplication.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/BoringSSL-GRPC/openssl_grpc.framework/Headers\"",
@@ -763,7 +773,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ca.sheridancollege.AutoPark-GOATS-UserApplication";
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.sheridancollege.AutoPark-GOATS-UserApplication-V2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AutoPark_GOATS_UserApplication/sendEmail_bridge.h";
 				SWIFT_VERSION = 5.0;

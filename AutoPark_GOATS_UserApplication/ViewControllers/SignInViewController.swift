@@ -29,7 +29,7 @@ class SignInViewController: UIViewController {
         let db = Firestore.firestore()
         let password = passwordTextfield.text!
         
-        let newDoc = db.collection("Users").document(userIdTextField.text!).getDocument { (document, error) in
+        let _: Void = db.collection("Users").document(userIdTextField.text!).getDocument { (document, error) in
             
             if error == nil{
                 //check if user exist
@@ -56,7 +56,7 @@ class SignInViewController: UIViewController {
                     
                 }
             }else{
-                print(error)
+                print(error ?? "not found error")
             }
             
         }
