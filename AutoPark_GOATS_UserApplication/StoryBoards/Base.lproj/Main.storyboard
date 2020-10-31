@@ -8,35 +8,84 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Parking History-->
         <scene sceneID="OLZ-83-Lre">
             <objects>
-                <viewController id="t3R-Hs-u6c" sceneMemberID="viewController">
+                <viewController id="t3R-Hs-u6c" customClass="ParkingHistoryViewController" customModule="AutoPark_GOATS_UserApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lgu-lw-5Ls">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nnv-2G-KgK">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Parking History" id="1Ye-Eh-hWX">
+                                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="vE5-OH-Yv7">
+                                            <connections>
+                                                <segue destination="B1r-sT-xGX" kind="unwind" unwindAction="unwindToHomeViewControllerWithSender:" id="b04-Ro-5xp"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="nwA-Tn-aqC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="tQc-TS-tDS"/>
+                    <tabBarItem key="tabBarItem" title="Parking History" id="tQc-TS-tDS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cUI-Ao-d7M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="B1r-sT-xGX" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-5530" y="1685"/>
         </scene>
-        <!--Item 1-->
+        <!--Current Bill-->
         <scene sceneID="MbP-rA-TRJ">
             <objects>
-                <viewController id="S7F-vr-0iq" sceneMemberID="viewController">
+                <viewController id="S7F-vr-0iq" customClass="CurrrentBillViewController" customModule="AutoPark_GOATS_UserApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m3p-nF-cip">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bb3-4i-jFd">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Current Bill" id="Ds2-Fg-FXY">
+                                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="gmX-uo-StI">
+                                            <connections>
+                                                <segue destination="bRi-6b-eJm" kind="unwind" unwindAction="unwindToHomeViewControllerWithSender:" id="IR6-cq-ZkD"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome Back!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAW-Z4-EeQ">
+                                <rect key="frame" x="66" y="131" width="118" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Firstname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foE-no-NF8">
+                                <rect key="frame" x="231" y="131" width="76" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="9gB-uh-Vv5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="hoo-oe-KjX"/>
+                    <tabBarItem key="tabBarItem" title="Current Bill" id="hoo-oe-KjX"/>
+                    <connections>
+                        <outlet property="lbShowName" destination="foE-no-NF8" id="pZv-KA-xH7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CtH-lT-aJQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="bRi-6b-eJm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-6326" y="1685"/>
         </scene>
@@ -57,70 +106,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0B4-mY-S9q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5529" y="936"/>
-        </scene>
-        <!--User Main Page View Controller-->
-        <scene sceneID="Lee-xl-XSR">
-            <objects>
-                <viewController id="oSU-zg-iZn" customClass="UserMainPageViewController" customModule="AutoPark_GOATS_UserApplication" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="HTm-Rn-qpk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome Back!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAW-Z4-EeQ">
-                                <rect key="frame" x="78" y="100" width="118" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Firstname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foE-no-NF8">
-                                <rect key="frame" x="231" y="100" width="76" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62v-JH-vcm">
-                                <rect key="frame" x="131" y="203" width="113" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Make a Payment"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeO-HK-RY8">
-                                <rect key="frame" x="117" y="323" width="141" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Manage My Account"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Plr-Jy-1lA">
-                                <rect key="frame" x="96" y="266" width="183" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Manage My License Plates"/>
-                            </button>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VA1-pW-i2q">
-                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Menu" id="c9K-bo-mVy">
-                                        <barButtonItem key="rightBarButtonItem" title="Sign out" id="aem-ra-Yu4">
-                                            <connections>
-                                                <segue destination="cp5-Mq-TWz" kind="unwind" unwindAction="unwindToHomeViewControllerWithSender:" id="xeA-7R-oJ4"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="lYr-D8-RTh"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <connections>
-                        <outlet property="lbShowName" destination="foE-no-NF8" id="Wga-Rg-jBL"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9Je-ol-QzU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="cp5-Mq-TWz" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="-3092" y="853"/>
+            <point key="canvasLocation" x="-5530" y="933"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="a6R-xH-pBY">
@@ -194,7 +180,7 @@
                         <outlet property="btnSignIn" destination="6sJ-nw-iKB" id="eqy-wE-B0b"/>
                         <outlet property="passwordTextfield" destination="YQQ-q8-lgb" id="VTJ-lT-2ff"/>
                         <outlet property="userIdTextField" destination="vE7-TD-5Gn" id="TdJ-eO-XSJ"/>
-                        <segue destination="oSU-zg-iZn" kind="presentation" identifier="goToMenu" modalPresentationStyle="fullScreen" id="s0f-aM-Gym"/>
+                        <segue destination="eKX-8n-pM1" kind="presentation" identifier="goToMenu" modalPresentationStyle="fullScreen" id="9fP-3e-Frm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6gG-B2-aZR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -739,21 +725,106 @@
             </objects>
             <point key="canvasLocation" x="1260" y="853"/>
         </scene>
-        <!--Item 3-->
+        <!--Account Management-->
         <scene sceneID="NRD-WS-9Yp">
             <objects>
-                <viewController id="fPR-WO-mdP" sceneMemberID="viewController">
+                <viewController id="fPR-WO-mdP" customClass="AccountManagementViewController" customModule="AutoPark_GOATS_UserApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xra-Ue-nZg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZT-hF-j4O">
+                                <rect key="frame" x="88" y="478" width="198" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="add a new car to my account"/>
+                                <connections>
+                                    <segue destination="ApU-Wh-YbX" kind="presentation" modalPresentationStyle="fullScreen" id="lT4-UY-5lU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxY-5D-sum">
+                                <rect key="frame" x="143" y="408" width="89" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="view my cars"/>
+                                <connections>
+                                    <segue destination="hPd-X0-tnZ" kind="presentation" modalPresentationStyle="fullScreen" id="R3b-jw-GAH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsm-Lp-bMQ">
+                                <rect key="frame" x="138" y="329" width="98" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="edit my profile"/>
+                                <connections>
+                                    <segue destination="BPA-pN-gXL" kind="presentation" modalPresentationStyle="fullScreen" id="LJT-82-XkV"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8R2-qa-BAn">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Account Management" id="SJF-od-bCa">
+                                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="JRN-Mo-MUg">
+                                            <connections>
+                                                <segue destination="dFt-gA-s9g" kind="unwind" unwindAction="unwindToHomeViewControllerWithSender:" id="vcq-3s-3UA"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="E2A-VD-CMb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 3" id="ZPG-Fy-Yut"/>
+                    <tabBarItem key="tabBarItem" title="Account Management" id="ZPG-Fy-Yut"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nf3-kF-hRC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="dFt-gA-s9g" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-4777" y="1685"/>
+            <point key="canvasLocation" x="-4778.3999999999996" y="1684.729064039409"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Gle-Pk-D5l">
+            <objects>
+                <viewController id="BPA-pN-gXL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8N6-hD-KKk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ayb-Qa-AIv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j15-mv-3ew" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5530" y="2392"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="coU-NU-7ub">
+            <objects>
+                <viewController id="hPd-X0-tnZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZEJ-iu-ItB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="5w3-lE-IhL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6nr-0A-5GG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4778" y="2392"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GRk-Ie-nwc">
+            <objects>
+                <viewController id="ApU-Wh-YbX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bsp-Tx-sfg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="lsF-se-mMR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iz1-Lx-giK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4036" y="2392"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

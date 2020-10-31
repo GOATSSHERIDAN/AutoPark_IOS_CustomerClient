@@ -18,17 +18,19 @@ class PayWithoutSignInViewController: UIViewController,UIApplicationDelegate, PK
     func paymentAuthorizationViewController(_ controller: PKPaymentAuthorizationViewController, didAuthorizePayment payment: PKPayment, handler completion: @escaping (PKPaymentAuthorizationResult) -> Void) {
         completion(PKPaymentAuthorizationResult(status: .success, errors: nil))
         print("yes you paid")
-        let db = Firestore.firestore()
-        let myData = db.collection("ParkingHistory").document(self.processedDocId)
-        myData.updateData(["isPaid":true])
-        { err in
-            if let err = err {
-                print("Error updating document: \(err)")
-            } else {
-                print("Document successfully updated")
+        feeOwned = 0
+        for doc in processedDocId {
+            let db = Firestore.firestore()
+            let myData = db.collection("ParkingHistory").document(doc)
+            myData.updateData(["isPaid":true])
+            { err in
+                if let err = err {
+                    print("Error updating document: \(err)")
+                } else {
+                    print("Document:\(doc) successfully updated")
+                }
             }
-        }
-    }
+        }}
     
     
     
@@ -42,7 +44,7 @@ class PayWithoutSignInViewController: UIViewController,UIApplicationDelegate, PK
     
     var feeOwned = 0
     
-    var processedDocId : String = ""
+    var processedDocId : [String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         lbAmount.text = "$0.0"
@@ -61,21 +63,21 @@ class PayWithoutSignInViewController: UIViewController,UIApplicationDelegate, PK
             
             let db = Firestore.firestore()
             
-            let result = db.collection("ParkingHistory").whereField("isPaid", isEqualTo: false).whereField("licensePlate", isEqualTo: plateNumber.text)
+            let _: Void = db.collection("ParkingHistory").whereField("isPaid", isEqualTo: false).whereField("licensePlate", isEqualTo: plateNumber.text ?? "000")
                 .getDocuments() { (querySnapshot, err) in
                     if let err = err {
                         print("Error getting documents: \(err)")
                     } else {
                         for document in querySnapshot!.documents {
                             print("\(document.documentID)")
-                            self.processedDocId = document.documentID
+                            self.processedDocId.append(document.documentID)
                             self.feeOwned += document["fee"] as! Int
                         }
                         print(self.feeOwned)
                         self.lbAmount.text = "$ \(self.feeOwned)"
                         self.paymentAmount = Double(self.feeOwned)
                     }
-            }
+                }
             
             
             

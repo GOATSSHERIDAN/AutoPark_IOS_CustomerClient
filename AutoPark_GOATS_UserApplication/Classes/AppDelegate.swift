@@ -13,8 +13,12 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var signedUser : [String : Any]?
+    var signedDocName : String?
+    
     var resetPasswordFor : String?
     var resetPasswordDoc : [String:Any]?
+    
+    
     var newUser : User?
     var randomCode : String?
     

@@ -38,7 +38,7 @@ class SignInViewController: UIViewController {
                     let realPassword = realDoc!["password"] as! String
                     if realPassword == password{
                         self.mainDelegate.signedUser = realDoc
-                        
+                        self.mainDelegate.signedDocName = self.userIdTextField.text!
                         self.performSegue(withIdentifier: "goToMenu", sender: nil)
                     }else{
                         let alertController = UIAlertController(title: "Error", message: "Invalid Password, Please re-try!", preferredStyle: .alert)
