@@ -7,6 +7,8 @@
 
 import UIKit
 import PassKit
+import FirebaseFirestore
+
 
 class PayWithoutSignInViewController: UIViewController,UIApplicationDelegate, PKPaymentAuthorizationViewControllerDelegate{
     func paymentAuthorizationViewControllerDidFinish(_ controller: PKPaymentAuthorizationViewController) {
@@ -15,23 +17,76 @@ class PayWithoutSignInViewController: UIViewController,UIApplicationDelegate, PK
     
     func paymentAuthorizationViewController(_ controller: PKPaymentAuthorizationViewController, didAuthorizePayment payment: PKPayment, handler completion: @escaping (PKPaymentAuthorizationResult) -> Void) {
         completion(PKPaymentAuthorizationResult(status: .success, errors: nil))
+        print("yes you paid")
+        let db = Firestore.firestore()
+        let myData = db.collection("ParkingHistory").document(self.processedDocId)
+        myData.updateData(["isPaid":true])
+        { err in
+            if let err = err {
+                print("Error updating document: \(err)")
+            } else {
+                print("Document successfully updated")
+            }
+        }
     }
     
     
     
     @IBOutlet weak var btn_pay: UIButton!
     
-    let paymentAmount : Double = 1001
+    @IBOutlet weak var plateNumber: UITextField!
     
+    @IBOutlet weak var lbAmount: UILabel!
     
+    var paymentAmount : Double = 0
     
+    var feeOwned = 0
+    
+    var processedDocId : String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+        lbAmount.text = "$0.0"
         self.btn_pay.addTarget(self, action: #selector(tapForPay), for: .touchUpInside)
         // Do any additional setup after loading the view.
     }
+    
+    
+    @IBAction func searchAmount(_ sender: Any) {
+        if plateNumber.text!.isEmpty {
+            let alertController = UIAlertController(title: "Error", message: "Please fill it!", preferredStyle: .alert)
+            let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(cancelAction)
+            self.present(alertController,animated: true)
+        }else{
+            
+            let db = Firestore.firestore()
+            
+            let result = db.collection("ParkingHistory").whereField("isPaid", isEqualTo: false).whereField("licensePlate", isEqualTo: plateNumber.text)
+                .getDocuments() { (querySnapshot, err) in
+                    if let err = err {
+                        print("Error getting documents: \(err)")
+                    } else {
+                        for document in querySnapshot!.documents {
+                            print("\(document.documentID)")
+                            self.processedDocId = document.documentID
+                            self.feeOwned += document["fee"] as! Int
+                        }
+                        print(self.feeOwned)
+                        self.lbAmount.text = "$ \(self.feeOwned)"
+                        self.paymentAmount = Double(self.feeOwned)
+                    }
+            }
+            
+            
+            
+            
+            
+        }
+    }
+    
+    
     @objc func tapForPay(){
-            let paymentRequest : PKPaymentRequest = {
+        let paymentRequest : PKPaymentRequest = {
             let request  = PKPaymentRequest()
             request.merchantIdentifier = "merchant.ca.sheridancollege.AutoPark-GOATS-UserApplication"
             request.supportedNetworks = [.quicPay, .masterCard, .visa]
@@ -39,7 +94,7 @@ class PayWithoutSignInViewController: UIViewController,UIApplicationDelegate, PK
             request.merchantCapabilities = .capability3DS
             request.countryCode = "CA"
             request.currencyCode = "CAD"
-                request.paymentSummaryItems = [PKPaymentSummaryItem(label: "GIVE ME MONEY", amount: NSDecimalNumber(value: paymentAmount))]
+            request.paymentSummaryItems = [PKPaymentSummaryItem(label: "GIVE ME MONEY", amount: NSDecimalNumber(value: paymentAmount))]
             return request
         }()
         let controller = PKPaymentAuthorizationViewController(paymentRequest: paymentRequest)
@@ -47,6 +102,7 @@ class PayWithoutSignInViewController: UIViewController,UIApplicationDelegate, PK
             controller!.delegate = self
             present(controller!, animated: true){
                 print("completed")
+                
             }
             
         }
