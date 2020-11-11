@@ -33,6 +33,9 @@ class PayWithoutSignInViewController: UIViewController,UIApplicationDelegate, PK
         }}
     
     
+    @IBAction func goBack(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     @IBOutlet weak var btn_pay: UIButton!
     

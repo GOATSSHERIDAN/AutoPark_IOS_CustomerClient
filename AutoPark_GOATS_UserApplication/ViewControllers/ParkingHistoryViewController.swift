@@ -64,6 +64,11 @@ class ParkingHistoryViewController: UIViewController,UITableViewDataSource, UITa
                 }
             }
     }
+    @IBAction func doRefresh(_ sender: Any) {
+        tableInfo = []
+        getHistory()
+        historyTable.reloadData()
+    }
     /*
     // MARK: - Navigation
 

@@ -100,7 +100,10 @@ class CurrrentBillViewController: UIViewController,UITableViewDataSource, UITabl
                     print("Document:\(doc) successfully updated")
                 }
             }
-        }}
+        }
+        tableInfo = []
+        billTable.reloadData()
+    }
     
     @objc func tapForPay(){
         let paymentRequest : PKPaymentRequest = {
