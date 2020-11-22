@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var resetPasswordFor : String?
     var resetPasswordDoc : [String:Any]?
-    
+    var parkingAmount : String?
     
     var newUser : User?
     var randomCode : String?

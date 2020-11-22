@@ -34,6 +34,7 @@
 		BF90AA10252BA3EA00781CC2 /* SuccessfullySignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF90AA0F252BA3EA00781CC2 /* SuccessfullySignUpViewController.swift */; };
 		BF90AA15252BA5C300781CC2 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF90AA14252BA5C300781CC2 /* ResetPasswordViewController.swift */; };
 		BF90AA1F252BB73E00781CC2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF90AA1E252BB73E00781CC2 /* User.swift */; };
+		BFB377D4256A2948007614D5 /* SendEmailReciptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB377D3256A2948007614D5 /* SendEmailReciptViewController.swift */; };
 		BFE35EE4253A71E3009C6BFD /* VerifyEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE35EE3253A71E3009C6BFD /* VerifyEmailViewController.swift */; };
 		BFEC4002252F83440051F2A1 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFEC4001252F83440051F2A1 /* config.plist */; };
 		BFEC4064252FA45D0051F2A1 /* VerifyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEC4063252FA45D0051F2A1 /* VerifyAPI.swift */; };
@@ -93,6 +94,7 @@
 		BF90AA0F252BA3EA00781CC2 /* SuccessfullySignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfullySignUpViewController.swift; sourceTree = "<group>"; };
 		BF90AA14252BA5C300781CC2 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		BF90AA1E252BB73E00781CC2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BFB377D3256A2948007614D5 /* SendEmailReciptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendEmailReciptViewController.swift; sourceTree = "<group>"; };
 		BFE35EDF253A5887009C6BFD /* sendEmail_bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sendEmail_bridge.h; sourceTree = "<group>"; };
 		BFE35EE3253A71E3009C6BFD /* VerifyEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyEmailViewController.swift; sourceTree = "<group>"; };
 		BFEC4001252F83440051F2A1 /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 				BF8E4F63254D20C300990A3B /* CurrrentBillViewController.swift */,
 				BF8E4F68254D20D800990A3B /* ParkingHistoryViewController.swift */,
 				BF8E4F6D254D20E900990A3B /* AccountManagementViewController.swift */,
+				BFB377D3256A2948007614D5 /* SendEmailReciptViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 			files = (
 				BF90AA15252BA5C300781CC2 /* ResetPasswordViewController.swift in Sources */,
 				BF293286252B8AD800850D83 /* SignUpViewController.swift in Sources */,
+				BFB377D4256A2948007614D5 /* SendEmailReciptViewController.swift in Sources */,
 				BF293237252B84AB00850D83 /* ViewController.swift in Sources */,
 				BF8E4F5F254D1F1000990A3B /* AddNewCarViewController.swift in Sources */,
 				BF29323D252B84AB00850D83 /* AutoPark_GOATS_UserApplication.xcdatamodeld in Sources */,

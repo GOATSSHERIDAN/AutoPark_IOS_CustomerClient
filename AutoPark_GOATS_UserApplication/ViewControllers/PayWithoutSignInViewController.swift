@@ -28,9 +28,22 @@ class PayWithoutSignInViewController: UIViewController,UIApplicationDelegate, PK
                     print("Error updating document: \(err)")
                 } else {
                     print("Document:\(doc) successfully updated")
+                    let alertController = UIAlertController(title: "Payment Successful", message: "Do you want a email copy of your recipt?", preferredStyle: .alert)
+                    let cancelAction = UIAlertAction(title: "No", style: .default, handler: nil)
+                    let yesAction = UIAlertAction(title: "Yes", style: .default, handler: { action in
+                        print("we will send email to user")
+                        self.performSegue(withIdentifier: "goToSendRecipt", sender: self)
+                        
+                    })
+                    alertController.addAction(cancelAction)
+                    alertController.addAction(yesAction)
+                    self.present(alertController,animated: true)
                 }
             }
-        }}
+        }
+     
+        self.dismiss(animated: true, completion: nil)
+    }
     
     
     @IBAction func goBack(_ sender: Any) {
@@ -48,10 +61,12 @@ class PayWithoutSignInViewController: UIViewController,UIApplicationDelegate, PK
     var feeOwned = 0
     
     var processedDocId : [String] = []
+    let mainDelegate = UIApplication.shared.delegate as! AppDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         lbAmount.text = "$0.0"
         self.btn_pay.addTarget(self, action: #selector(tapForPay), for: .touchUpInside)
+        btn_pay.isEnabled = false
         // Do any additional setup after loading the view.
     }
     
@@ -79,6 +94,10 @@ class PayWithoutSignInViewController: UIViewController,UIApplicationDelegate, PK
                         print(self.feeOwned)
                         self.lbAmount.text = "$ \(self.feeOwned)"
                         self.paymentAmount = Double(self.feeOwned)
+                        if self.paymentAmount != 0{
+                            self.btn_pay.isEnabled = true
+                            self.mainDelegate.parkingAmount = "\(self.paymentAmount)"
+                        }
                     }
                 }
             
