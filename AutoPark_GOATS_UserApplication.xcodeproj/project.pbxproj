@@ -22,6 +22,8 @@
 		BF293258252B84AD00850D83 /* AutoPark_GOATS_UserApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF293257252B84AD00850D83 /* AutoPark_GOATS_UserApplicationUITests.swift */; };
 		BF293280252B892200850D83 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF29327F252B892200850D83 /* SignInViewController.swift */; };
 		BF293286252B8AD800850D83 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF293285252B8AD700850D83 /* SignUpViewController.swift */; };
+		BF4E5400256C8A1F00985C57 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = BF4E53FF256C8A1F00985C57 /* button.png */; };
+		BF4E5405256C8B8900985C57 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF4E5404256C8B8900985C57 /* AppIcon.png */; };
 		BF71E796254A68AE0008052F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF71E795254A68AE0008052F /* GoogleService-Info.plist */; };
 		BF71E857254A761B0008052F /* PayWithoutSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF71E856254A761B0008052F /* PayWithoutSignInViewController.swift */; };
 		BF8E4F55254D1EEE00990A3B /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8E4F54254D1EEE00990A3B /* EditProfileViewController.swift */; };
@@ -81,6 +83,8 @@
 		BF293259252B84AD00850D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF29327F252B892200850D83 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		BF293285252B8AD700850D83 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		BF4E53FF256C8A1F00985C57 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		BF4E5404256C8B8900985C57 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
 		BF71E75D254A5FAB0008052F /* AutoPark_GOATS_UserApplication.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoPark_GOATS_UserApplication.entitlements; sourceTree = "<group>"; };
 		BF71E795254A68AE0008052F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BF71E856254A761B0008052F /* PayWithoutSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWithoutSignInViewController.swift; sourceTree = "<group>"; };
@@ -268,6 +272,8 @@
 		BF29326F252B87A400850D83 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				BF4E5404256C8B8900985C57 /* AppIcon.png */,
+				BF4E53FF256C8A1F00985C57 /* button.png */,
 				BF04CDE9254A8C4C00E93B4D /* applepaybutton.png */,
 			);
 			path = Images;
@@ -388,6 +394,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF4E5405256C8B8900985C57 /* AppIcon.png in Resources */,
+				BF4E5400256C8A1F00985C57 /* button.png in Resources */,
 				BF293242252B84AC00850D83 /* LaunchScreen.storyboard in Resources */,
 				BF04CDEA254A8C4C00E93B4D /* applepaybutton.png in Resources */,
 				BF29323F252B84AC00850D83 /* Assets.xcassets in Resources */,
