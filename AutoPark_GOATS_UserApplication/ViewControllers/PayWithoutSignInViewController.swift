@@ -52,7 +52,7 @@ class PayWithoutSignInViewController: UIViewController,UIApplicationDelegate, PK
     
     @IBOutlet weak var btn_pay: UIButton!
     
-    @IBOutlet weak var plateNumber: UITextField!
+    @IBOutlet weak var plateNumber: UISearchBar!
     
     @IBOutlet weak var lbAmount: UILabel!
     

@@ -472,21 +472,12 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8YI-SB-EYa">
                                 <rect key="frame" x="147" y="360" width="80" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Sign in">
                                     <color key="titleColor" red="1" green="0.96214920280000005" blue="0.81581145519999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <segue destination="RsH-ya-sNX" kind="presentation" modalPresentationStyle="fullScreen" id="HNH-Fu-p69"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzM-A3-fOj">
-                                <rect key="frame" x="84" y="398" width="207" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="I want to pay without account">
-                                    <color key="titleColor" red="1" green="0.96214920280000005" blue="0.81581145519999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Cjw-Eu-Udo" kind="presentation" modalPresentationStyle="fullScreen" id="DbO-RD-2Mc"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AppIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="do5-SR-K5N">
@@ -496,11 +487,23 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqZ-gg-Dxb">
                                 <rect key="frame" x="147" y="314" width="80" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Sign up">
                                     <color key="titleColor" red="1" green="0.96214920280000005" blue="0.81581145519999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <segue destination="uco-O6-EFL" kind="presentation" modalPresentationStyle="fullScreen" id="rWo-JF-bzQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzM-A3-fOj">
+                                <rect key="frame" x="54" y="398" width="267" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="I want to pay without account">
+                                    <color key="titleColor" red="1" green="0.96214920280000005" blue="0.81581145519999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Cjw-Eu-Udo" kind="presentation" modalPresentationStyle="fullScreen" id="DbO-RD-2Mc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -524,22 +527,6 @@
                                 <rect key="frame" x="101" y="515" width="172" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="applepaybutton.png"/>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OBy-m8-EJ1">
-                                <rect key="frame" x="104" y="136" width="166" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDW-Zh-dna">
-                                <rect key="frame" x="163" y="200" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Search">
-                                    <color key="titleColor" red="1" green="0.96214920280000005" blue="0.81581145519999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="searchAmount:" destination="Cjw-Eu-Udo" eventType="touchUpInside" id="BpJ-kt-HbN"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPL-sa-8I7">
                                 <rect key="frame" x="77" y="349" width="65" height="21"/>
@@ -580,6 +567,22 @@
                                 <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NZ2-0h-6Re">
+                                <rect key="frame" x="0.0" y="79" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDW-Zh-dna">
+                                <rect key="frame" x="81" y="130" width="213" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Search By Plate Number">
+                                    <color key="titleColor" red="1" green="0.96214920280000005" blue="0.81581145519999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="searchAmount:" destination="Cjw-Eu-Udo" eventType="touchUpInside" id="BpJ-kt-HbN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="stf-74-y1v"/>
                         <color key="backgroundColor" red="0.11748378719999999" green="0.1214368269" blue="0.13332480190000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -587,7 +590,7 @@
                     <connections>
                         <outlet property="btn_pay" destination="Khl-UA-TEC" id="cCW-Ug-caq"/>
                         <outlet property="lbAmount" destination="kOx-Va-uRF" id="OBo-Y3-ZMt"/>
-                        <outlet property="plateNumber" destination="OBy-m8-EJ1" id="GYW-Qx-8HW"/>
+                        <outlet property="plateNumber" destination="NZ2-0h-6Re" id="swg-De-TQG"/>
                         <segue destination="Yea-Kw-baq" kind="presentation" identifier="goToSendRecipt" id="TQt-Zd-Uyv"/>
                     </connections>
                 </viewController>
@@ -617,8 +620,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBg-VA-Xty">
-                                <rect key="frame" x="169" y="264" width="36" height="30"/>
+                                <rect key="frame" x="164" y="263" width="46" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Send">
                                     <color key="titleColor" red="1" green="0.96214920280000005" blue="0.81581145519999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -960,8 +964,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZT-hF-j4O">
-                                <rect key="frame" x="88" y="478" width="198" height="30"/>
+                                <rect key="frame" x="63" y="477" width="252" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="add a new car to my account">
                                     <color key="titleColor" red="1" green="0.96214920280000005" blue="0.81581145519999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -970,8 +975,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxY-5D-sum">
-                                <rect key="frame" x="143" y="408" width="89" height="30"/>
+                                <rect key="frame" x="132" y="407" width="114" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="view my cars">
                                     <color key="titleColor" red="1" green="0.96214920280000005" blue="0.81581145519999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -980,8 +986,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsm-Lp-bMQ">
-                                <rect key="frame" x="138" y="329" width="98" height="30"/>
+                                <rect key="frame" x="125" y="328" width="125" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="edit my profile">
                                     <color key="titleColor" red="1" green="0.96214920280000005" blue="0.81581145519999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -1063,13 +1070,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZIx-MP-HxS">
-                                <rect key="frame" x="107" y="452" width="161" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.11748378719999999" green="0.1214368269" blue="0.13332480190000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gRu-Ld-1rh">
                                 <rect key="frame" x="107" y="563" width="161" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1103,6 +1103,13 @@
                             </navigationBar>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qut-L7-Vb9">
                                 <rect key="frame" x="107" y="314" width="161" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.11748378719999999" green="0.1214368269" blue="0.13332480190000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZIx-MP-HxS">
+                                <rect key="frame" x="107" y="439" width="161" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.11748378719999999" green="0.1214368269" blue="0.13332480190000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1200,8 +1207,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fge-Vr-4LI">
-                                <rect key="frame" x="172" y="540" width="30" height="30"/>
+                                <rect key="frame" x="170" y="539" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Add">
                                     <color key="titleColor" red="1" green="0.96214920280000005" blue="0.81581145519999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -1267,7 +1275,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="F6X-M8-yam"/>
+        <segue reference="HNH-Fu-p69"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AppIcon.png" width="514" height="318"/>
