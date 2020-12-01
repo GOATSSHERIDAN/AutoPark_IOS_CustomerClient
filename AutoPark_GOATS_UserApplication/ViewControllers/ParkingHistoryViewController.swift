@@ -37,33 +37,54 @@ class ParkingHistoryViewController: UIViewController,UITableViewDataSource, UITa
     }
     
     func getHistory(){
-        let db = Firestore.firestore()
-        var result = db.collection("LicencePlateNumber").whereField("userId", isEqualTo: mainDelegate.signedDocName!)
-            .getDocuments() { (querySnapshot, err) in
-                if let err = err {
-                    print("Error getting documents: \(err)")
-                } else {
-                    for document in querySnapshot!.documents {
-                        print(document.documentID)
-                        self.cars.append(document.documentID)
-                    }
-                    print(self.cars)
-                    db.collection("ParkingHistory").whereField("isPaid", isEqualTo: true).whereField("licensePlate", in: self.cars).getDocuments() { (querySnapshot2, err) in
-                        if let err = err {
-                            print("Error getting documents: \(err)")
-                        } else {
-                            for document in querySnapshot2!.documents {
-                                print("\(document.documentID)")
-                                self.tableInfo.append("\(document.documentID)---$\(document["fee"] as! Int)")
+            let db = Firestore.firestore()
+            var result = db.collection("LicencePlateNumber").whereField("userId", isEqualTo: mainDelegate.signedDocName!)
+                .getDocuments() { (querySnapshot, err) in
+                    if let err = err {
+                        print("Error getting documents: \(err)")
+                    } else {
+                        print(querySnapshot?.count)
+                        if querySnapshot?.count == 0{
+                            let alertController = UIAlertController(title: "Message", message: "You don't have any cars in your account!", preferredStyle: .alert)
+                            let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                            
+                            alertController.addAction(cancelAction)
+                            self.present(alertController,animated: true)
+                        }
+                        else{
+                            for document in querySnapshot!.documents {
+                                print(document.documentID)
+                                self.cars.append(document.documentID)
                             }
                             
-                            self.historyTable.reloadData()
+                            
+                            
+                            
+                            print(self.cars)
+                            
+                            db.collection("ParkingHistory").whereField("isPaid", isEqualTo: true).whereField("licensePlate", in: self.cars).getDocuments() { (querySnapshot2, err) in
+                                if let err = err {
+                                    print("Error getting documents: \(err)")
+                                } else {
+                                    print(querySnapshot2?.count)
+                                    
+                                    if querySnapshot2?.count == 0{}
+                                    else{
+                                        for document in querySnapshot2!.documents {
+                                            print("\(document.documentID)")
+                                            self.tableInfo.append("\(document.documentID)---$\(document["fee"] as! Int)")
+                                        }
+                                        
+                                        self.historyTable.reloadData()
+                                    }
+                                    
+                                }
+                                
+                            }
                         }
-                        
                     }
                 }
-            }
-    }
+        }
     @IBAction func doRefresh(_ sender: Any) {
         tableInfo = []
         getHistory()
@@ -78,5 +99,8 @@ class ParkingHistoryViewController: UIViewController,UITableViewDataSource, UITa
         // Pass the selected object to the new view controller.
     }
     */
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 
 }

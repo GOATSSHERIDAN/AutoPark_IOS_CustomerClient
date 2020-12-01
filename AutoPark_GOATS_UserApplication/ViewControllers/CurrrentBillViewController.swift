@@ -23,7 +23,7 @@ class CurrrentBillViewController: UIViewController,UITableViewDataSource, UITabl
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        lbShowName.text = mainDelegate.signedUser?["firstName"] as! String
+        lbShowName.text = mainDelegate.signedUser?["firstName"] as? String
         getHistory()
         self.btn_pay.addTarget(self, action: #selector(tapForPay), for: .touchUpInside)
     }
@@ -43,37 +43,67 @@ class CurrrentBillViewController: UIViewController,UITableViewDataSource, UITabl
     }
     
     func getHistory(){
-        let db = Firestore.firestore()
-        var result = db.collection("LicencePlateNumber").whereField("userId", isEqualTo: mainDelegate.signedDocName!)
-            .getDocuments() { (querySnapshot, err) in
-                if let err = err {
-                    print("Error getting documents: \(err)")
-                } else {
-                    for document in querySnapshot!.documents {
-                        print(document.documentID)
-                        self.cars.append(document.documentID)
-                    }
-                    print(self.cars)
-                    db.collection("ParkingHistory").whereField("isPaid", isEqualTo: false).whereField("licensePlate", in: self.cars).getDocuments() { (querySnapshot2, err) in
-                        if let err = err {
-                            print("Error getting documents: \(err)")
-                        } else {
-                            for document in querySnapshot2!.documents {
-                                print("\(document.documentID)")
-                                self.processedDocId.append(document.documentID)
-                                self.feeOwned += document["fee"] as! Int
-                                //self.tableInfo.append("\(document["startDateTime"])  \(document["endDateTime"])  $\(document["fee"])")
-                                self.tableInfo.append("\(document.documentID)---$\(document["fee"] as! Int)")
+            let db = Firestore.firestore()
+            var result = db.collection("LicencePlateNumber").whereField("userId", isEqualTo: mainDelegate.signedDocName!)
+                .getDocuments() { (querySnapshot, err) in
+                    if let err = err {
+                        print("Error getting documents: \(err)")
+                    } else {
+                        print(querySnapshot?.count)
+                        if querySnapshot?.count == 0{
+                            self.btn_pay.isHidden = true
+                            self.billTable.isHidden = true
+                            self.lbFees.isHidden = true
+                            
+                            let alertController = UIAlertController(title: "Message", message: "You don't have any carsin your account!", preferredStyle: .alert)
+                            let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                            
+                            alertController.addAction(cancelAction)
+                            self.present(alertController,animated: true)
+                            
+                        }
+                        else{
+                            for document in querySnapshot!.documents {
+                                print(document.documentID)
+                                self.cars.append(document.documentID)
                             }
-                            self.lbFees.text = "Amount: $\(self.feeOwned)"
-                            print(self.tableInfo)
-                            self.billTable.reloadData()
+                            print(self.cars)
+                            db.collection("ParkingHistory").whereField("isPaid", isEqualTo: false).whereField("licensePlate", in: self.cars).getDocuments() { (querySnapshot2, err) in
+                                if let err = err {
+                                    print("Error getting documents: \(err)")
+                                } else {
+                                    
+                                    if querySnapshot2?.count == 0{
+                                        let alertController = UIAlertController(title: "Message", message: "You don't have any unpaid parking!", preferredStyle: .alert)
+                                        let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                                        
+                                        alertController.addAction(cancelAction)
+                                        self.present(alertController,animated: true)
+                                    }
+                                    else{
+                                        for document in querySnapshot2!.documents {
+                                        print("\(document.documentID)")
+                                        self.processedDocId.append(document.documentID)
+                                        self.feeOwned += document["fee"] as! Int
+                                        //self.tableInfo.append("\(document["startDateTime"])  \(document["endDateTime"])  $\(document["fee"])")
+                                        self.tableInfo.append("\(document.documentID)---$\(document["fee"] as! Int)")
+                                    }
+                                    self.lbFees.text = "Amount: $\(self.feeOwned)"
+                                    print(self.tableInfo)
+                                    self.billTable.reloadData()}
+                                    
+                                    
+                                    
+                                    
+                                }
+                                
+                            }
                         }
                         
                     }
                 }
-            }
-    }
+        }
+    
     
     
     
@@ -114,7 +144,7 @@ class CurrrentBillViewController: UIViewController,UITableViewDataSource, UITabl
             request.merchantCapabilities = .capability3DS
             request.countryCode = "CA"
             request.currencyCode = "CAD"
-            request.paymentSummaryItems = [PKPaymentSummaryItem(label: "GIVE ME MONEY", amount: NSDecimalNumber(value: feeOwned))]
+            request.paymentSummaryItems = [PKPaymentSummaryItem(label: "Total:", amount: NSDecimalNumber(value: feeOwned))]
             return request
         }()
         let controller = PKPaymentAuthorizationViewController(paymentRequest: paymentRequest)
@@ -137,6 +167,9 @@ class CurrrentBillViewController: UIViewController,UITableViewDataSource, UITabl
      // Pass the selected object to the new view controller.
      }
      */
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
     
 }

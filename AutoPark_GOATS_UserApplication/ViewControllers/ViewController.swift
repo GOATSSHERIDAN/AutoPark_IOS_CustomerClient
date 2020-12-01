@@ -21,6 +21,9 @@ class ViewController: UIViewController {
     @IBAction func unwindToHomeViewController(sender : UIStoryboardSegue){
         
     }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
 
 }

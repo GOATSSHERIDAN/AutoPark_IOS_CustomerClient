@@ -36,7 +36,9 @@ class VerifyEmailViewController: ViewController {
             self.present(alertController,animated: true)
         }
     }
-    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     /*
     // MARK: - Navigation
 

@@ -18,16 +18,16 @@ class SendEmailReciptViewController: UIViewController {
     }
     
     @IBAction func sendRecipt(_ sender: Any) {
-        
+        emailTf.textColor = .white
         if emailTf.text!.isEmpty{
-            let alertController = UIAlertController(title: "Error", message: "Please fill all", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Error", message: "Please fill all fields", preferredStyle: .alert)
             let cancelAction1 = UIAlertAction(title: "Cancel", style: .default, handler: nil)
             alertController.addAction(cancelAction1)
             self.present(alertController,animated: true)
         }else{
             sendRecipt(destEmail: emailTf.text ?? "error", amount: mainDelegate.parkingAmount ?? "error")
             
-            let alertController = UIAlertController(title: "Recipt Sent", message: "Thank you for using our product", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Recipt Sent", message: "Thank you for using AutoPark", preferredStyle: .alert)
             let cancelAction = UIAlertAction(title: "OK", style: .default, handler: {
                 action in
                 self.dismiss(animated: true, completion: nil)
@@ -61,7 +61,7 @@ class SendEmailReciptViewController: UIViewController {
         builder.header.to = [MCOAddress(displayName: "New User", mailbox: destEmail) as Any]
                 builder.header.from = MCOAddress(displayName: "GOATSTEAM", mailbox: "goatsteam.2020@gmail.com")
                 builder.header.subject = "Parking Recipt"
-                builder.htmlBody="<h1>Parking Recipt</h1><p>Amount: $\(amount)</p><h2>Thank you for using our application</h2>"
+                builder.htmlBody="<h1>Parking Recipt</h1><p>Amount: $\(amount)</p><h2>Thank you for using AutoPark</h2>"
         
                 let rfc822Data = builder.data()
                 let sendOperation = smtpSession.sendOperation(with: rfc822Data)
@@ -84,5 +84,8 @@ class SendEmailReciptViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 
 }

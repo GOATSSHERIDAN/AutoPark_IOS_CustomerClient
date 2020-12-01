@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		055FCA70363DEE1B28371896 /* Pods_AutoPark_GOATS_UserApplicationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C74F08B754D4CDABAD1A7DED /* Pods_AutoPark_GOATS_UserApplicationTests.framework */; };
+		734F4AE8257076B400DC055B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 734F4AE7257076B400DC055B /* GoogleService-Info.plist */; };
 		7C4CC2F0D724A2029E7AF618 /* Pods_AutoPark_GOATS_UserApplication_AutoPark_GOATS_UserApplicationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834E6CA57F11A44F0B1131D0 /* Pods_AutoPark_GOATS_UserApplication_AutoPark_GOATS_UserApplicationUITests.framework */; };
 		97A6B7572811CA584D8F1239 /* Pods_AutoPark_GOATS_UserApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD0FC3FAA6661C3E78CD220 /* Pods_AutoPark_GOATS_UserApplication.framework */; };
 		BF04CDEA254A8C4C00E93B4D /* applepaybutton.png in Resources */ = {isa = PBXBuildFile; fileRef = BF04CDE9254A8C4C00E93B4D /* applepaybutton.png */; };
@@ -24,7 +25,6 @@
 		BF293286252B8AD800850D83 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF293285252B8AD700850D83 /* SignUpViewController.swift */; };
 		BF4E5400256C8A1F00985C57 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = BF4E53FF256C8A1F00985C57 /* button.png */; };
 		BF4E5405256C8B8900985C57 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF4E5404256C8B8900985C57 /* AppIcon.png */; };
-		BF71E796254A68AE0008052F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF71E795254A68AE0008052F /* GoogleService-Info.plist */; };
 		BF71E857254A761B0008052F /* PayWithoutSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF71E856254A761B0008052F /* PayWithoutSignInViewController.swift */; };
 		BF8E4F55254D1EEE00990A3B /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8E4F54254D1EEE00990A3B /* EditProfileViewController.swift */; };
 		BF8E4F5A254D1EFE00990A3B /* ViewCarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8E4F59254D1EFE00990A3B /* ViewCarsViewController.swift */; };
@@ -61,6 +61,7 @@
 
 /* Begin PBXFileReference section */
 		6496E1726B40F2E8D866A5D6 /* Pods-AutoPark_GOATS_UserApplicationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPark_GOATS_UserApplicationTests.release.xcconfig"; path = "Target Support Files/Pods-AutoPark_GOATS_UserApplicationTests/Pods-AutoPark_GOATS_UserApplicationTests.release.xcconfig"; sourceTree = "<group>"; };
+		734F4AE7257076B400DC055B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		834E6CA57F11A44F0B1131D0 /* Pods_AutoPark_GOATS_UserApplication_AutoPark_GOATS_UserApplicationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoPark_GOATS_UserApplication_AutoPark_GOATS_UserApplicationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93CCAC0429EAC6D7AB16BDAD /* Pods-AutoPark_GOATS_UserApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPark_GOATS_UserApplication.release.xcconfig"; path = "Target Support Files/Pods-AutoPark_GOATS_UserApplication/Pods-AutoPark_GOATS_UserApplication.release.xcconfig"; sourceTree = "<group>"; };
 		966BDBCC63D136F79063D200 /* Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests.debug.xcconfig"; path = "Target Support Files/Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests/Pods-AutoPark_GOATS_UserApplication-AutoPark_GOATS_UserApplicationUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -86,7 +87,6 @@
 		BF4E53FF256C8A1F00985C57 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		BF4E5404256C8B8900985C57 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
 		BF71E75D254A5FAB0008052F /* AutoPark_GOATS_UserApplication.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoPark_GOATS_UserApplication.entitlements; sourceTree = "<group>"; };
-		BF71E795254A68AE0008052F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BF71E856254A761B0008052F /* PayWithoutSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWithoutSignInViewController.swift; sourceTree = "<group>"; };
 		BF8E4F54254D1EEE00990A3B /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		BF8E4F59254D1EFE00990A3B /* ViewCarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCarsViewController.swift; sourceTree = "<group>"; };
@@ -185,10 +185,10 @@
 		BF293231252B84AB00850D83 /* AutoPark_GOATS_UserApplication */ = {
 			isa = PBXGroup;
 			children = (
-				BF71E795254A68AE0008052F /* GoogleService-Info.plist */,
 				BF71E75D254A5FAB0008052F /* AutoPark_GOATS_UserApplication.entitlements */,
 				BFE35EDF253A5887009C6BFD /* sendEmail_bridge.h */,
 				BF293243252B84AC00850D83 /* Info.plist */,
+				734F4AE7257076B400DC055B /* GoogleService-Info.plist */,
 				BF29326E252B876200850D83 /* Assets */,
 				BF29326D252B875600850D83 /* Classes */,
 				BF293269252B86EF00850D83 /* ViewControllers */,
@@ -395,11 +395,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF4E5405256C8B8900985C57 /* AppIcon.png in Resources */,
+				734F4AE8257076B400DC055B /* GoogleService-Info.plist in Resources */,
 				BF4E5400256C8A1F00985C57 /* button.png in Resources */,
 				BF293242252B84AC00850D83 /* LaunchScreen.storyboard in Resources */,
 				BF04CDEA254A8C4C00E93B4D /* applepaybutton.png in Resources */,
 				BF29323F252B84AC00850D83 /* Assets.xcassets in Resources */,
-				BF71E796254A68AE0008052F /* GoogleService-Info.plist in Resources */,
 				BF29323A252B84AB00850D83 /* Main.storyboard in Resources */,
 				BFEC4002252F83440051F2A1 /* config.plist in Resources */,
 			);
@@ -760,7 +760,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ca.sheridancollege.AutoPark-GOATS-UserApplication-V2";
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.sheridancollege.AutoPark-GOATS-UserApplications";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AutoPark_GOATS_UserApplication/sendEmail_bridge.h";
 				SWIFT_VERSION = 5.0;
@@ -809,7 +809,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ca.sheridancollege.AutoPark-GOATS-UserApplication-V2";
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.sheridancollege.AutoPark-GOATS-UserApplications";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AutoPark_GOATS_UserApplication/sendEmail_bridge.h";
 				SWIFT_VERSION = 5.0;

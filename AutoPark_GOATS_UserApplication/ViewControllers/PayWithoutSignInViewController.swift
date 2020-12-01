@@ -118,7 +118,7 @@ class PayWithoutSignInViewController: UIViewController,UIApplicationDelegate, PK
             request.merchantCapabilities = .capability3DS
             request.countryCode = "CA"
             request.currencyCode = "CAD"
-            request.paymentSummaryItems = [PKPaymentSummaryItem(label: "GIVE ME MONEY", amount: NSDecimalNumber(value: paymentAmount))]
+            request.paymentSummaryItems = [PKPaymentSummaryItem(label: "Total:", amount: NSDecimalNumber(value: paymentAmount))]
             return request
         }()
         let controller = PKPaymentAuthorizationViewController(paymentRequest: paymentRequest)
@@ -141,7 +141,9 @@ class PayWithoutSignInViewController: UIViewController,UIApplicationDelegate, PK
      // Pass the selected object to the new view controller.
      }
      */
-    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 }
 
 //extension ViewController : PKPaymentAuthorizationViewControllerDelegate {

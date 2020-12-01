@@ -67,5 +67,8 @@ class ViewCarsViewController: UIViewController, UITableViewDataSource, UITableVi
      // Pass the selected object to the new view controller.
      }
      */
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
 }
