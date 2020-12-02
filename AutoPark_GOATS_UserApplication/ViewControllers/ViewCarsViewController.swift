@@ -27,6 +27,34 @@ class ViewCarsViewController: UIViewController, UITableViewDataSource, UITableVi
         tableCell.accessoryType = .disclosureIndicator
         return tableCell
     }
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        
+        let deleteAction = UITableViewRowAction(style: .normal, title: "Delete"){
+            (action, index) in
+            //print ("Delete button tapped")
+            let rowNum = indexPath.row
+            var deleteId = self.cars[rowNum]
+            print("\(deleteId) should be deleted now!")
+            let db = Firestore.firestore()
+            db.collection("LicencePlateNumber").document(deleteId).delete() { err in
+                if let err = err {
+                    print("Error removing document: \(err)")
+                } else {
+                    print("Document successfully removed!")
+                    self.getCars()
+                }
+            }
+            
+        }
+        deleteAction.backgroundColor = .red
+
+        return [deleteAction]
+        
+        
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         getCars()
@@ -35,11 +63,14 @@ class ViewCarsViewController: UIViewController, UITableViewDataSource, UITableVi
         // Do any additional setup after loading the view.
     }
     
+    
+    
     @IBAction func goBack(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
     func getCars(){
+        cars = []
         let userId = mainDelegate.signedDocName!
         
         let db = Firestore.firestore()

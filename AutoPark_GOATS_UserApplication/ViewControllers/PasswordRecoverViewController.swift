@@ -13,6 +13,7 @@ class PasswordRecoverViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        btnSubmit.isEnabled = false
     }
     @IBOutlet var btnSendCode : UIButton!
     @IBOutlet var btnSubmit : UIButton!
@@ -26,46 +27,56 @@ class PasswordRecoverViewController: UIViewController {
     @IBOutlet weak var errorLabel: UILabel!
     @IBAction func sendSecuryCode(sender : UIButton){
         
-        let phoneNumber = phoneNumberField.text ??  "00000"
-        let db = Firestore.firestore()
-        db.collection("Users").document(userIdField.text ?? "not user").getDocument { (document, error) in
-          
-            if error == nil{
-                //check if user exist
-                if document != nil && document!.exists{
-                    let realDoc = document!.data()
-                    let realPhoneNumber = realDoc!["phone"] as! String
-                    if realPhoneNumber == phoneNumber{
-                        
-                        let phoneNumber = self.phoneNumberField.text
-                        VerifyAPI.sendVerificationCode("1", phoneNumber!)
-                        let alertController = UIAlertController(title: "Sent", message: "Please check your phone!", preferredStyle: .alert)
-                        let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                        
-                        alertController.addAction(cancelAction)
-                        self.present(alertController,animated: true)
-                        self.mainDelegate.resetPasswordFor = self.userIdField.text ?? ""
-                        self.mainDelegate.resetPasswordDoc = realDoc
-                        
-                        
+        
+        
+        if userIdField.text!.isEmpty || phoneNumberField.text!.isEmpty{
+            let alertController = UIAlertController(title: "Error", message: "Please input both UserId and Phone number!", preferredStyle: .alert)
+            let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(cancelAction)
+            self.present(alertController,animated: true)
+        }else{
+            let phoneNumber = phoneNumberField.text ??  "00000"
+            let db = Firestore.firestore()
+            db.collection("Users").document(userIdField.text ?? "not user").getDocument { (document, error) in
+              
+                if error == nil{
+                    //check if user exist
+                    if document != nil && document!.exists{
+                        let realDoc = document!.data()
+                        let realPhoneNumber = realDoc!["phone"] as! String
+                        if realPhoneNumber == phoneNumber{
+                            
+                            let phoneNumber = self.phoneNumberField.text
+                            VerifyAPI.sendVerificationCode("1", phoneNumber!)
+                            let alertController = UIAlertController(title: "Sent", message: "Please check your phone!", preferredStyle: .alert)
+                            let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                            
+                            alertController.addAction(cancelAction)
+                            self.present(alertController,animated: true)
+                            self.mainDelegate.resetPasswordFor = self.userIdField.text ?? ""
+                            self.mainDelegate.resetPasswordDoc = realDoc
+                            
+                            
+                        }else{
+                            let alertController = UIAlertController(title: "Error", message: "User ID and phone number not match, Please re-try!", preferredStyle: .alert)
+                            let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                            
+                            alertController.addAction(cancelAction)
+                            self.present(alertController,animated: true)
+                        }
                     }else{
-                        let alertController = UIAlertController(title: "Error", message: "User ID and phone number not match, Please re-try!", preferredStyle: .alert)
+                        let alertController = UIAlertController(title: "Error", message: "User ID not exist, Please re-try!", preferredStyle: .alert)
                         let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                         
                         alertController.addAction(cancelAction)
                         self.present(alertController,animated: true)
+                        
                     }
                 }else{
-                    let alertController = UIAlertController(title: "Error", message: "User ID not exist, Please re-try!", preferredStyle: .alert)
-                    let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                    
-                    alertController.addAction(cancelAction)
-                    self.present(alertController,animated: true)
-                    
+                    print(error ?? "no error")
                 }
-            }else{
-                print(error ?? "no error")
             }
+            btnSubmit.isEnabled = true
         }
     }
     

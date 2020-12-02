@@ -74,6 +74,9 @@ class CurrrentBillViewController: UIViewController,UITableViewDataSource, UITabl
                                 } else {
                                     
                                     if querySnapshot2?.count == 0{
+                                        self.btn_pay.isHidden = true
+                                        self.billTable.isHidden = true
+                                        self.lbFees.isHidden = true
                                         let alertController = UIAlertController(title: "Message", message: "You don't have any unpaid parking!", preferredStyle: .alert)
                                         let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                                         
@@ -133,6 +136,9 @@ class CurrrentBillViewController: UIViewController,UITableViewDataSource, UITabl
         }
         tableInfo = []
         billTable.reloadData()
+        self.btn_pay.isHidden = true
+        self.billTable.isHidden = true
+        self.lbFees.isHidden = true
     }
     
     @objc func tapForPay(){

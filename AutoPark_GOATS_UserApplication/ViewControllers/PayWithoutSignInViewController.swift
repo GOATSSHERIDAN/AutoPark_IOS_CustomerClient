@@ -97,6 +97,11 @@ class PayWithoutSignInViewController: UIViewController,UIApplicationDelegate, PK
                         if self.paymentAmount != 0{
                             self.btn_pay.isEnabled = true
                             self.mainDelegate.parkingAmount = "\(self.paymentAmount)"
+                        }else{
+                            let alertController = UIAlertController(title: "Error", message: "No records found, plese check your input", preferredStyle: .alert)
+                            let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                            alertController.addAction(cancelAction)
+                            self.present(alertController,animated: true)
                         }
                     }
                 }
