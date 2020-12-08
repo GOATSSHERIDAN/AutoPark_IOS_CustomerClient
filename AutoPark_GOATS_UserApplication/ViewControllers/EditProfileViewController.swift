@@ -26,6 +26,7 @@ class EditProfileViewController: UIViewController {
         tfFirstName.text = mainDelegate.signedUser?["firstName"] as! String
         tfLastName.text = mainDelegate.signedUser?["lastName"] as! String
         tfEmail.addTarget(self, action: #selector(checkAndDisPlayErrorForEmail(tfEmail:)), for: .editingChanged)
+        tfphoneNumber.addTarget(self, action: #selector(checkAndDisPlayErrorForPhone(tfPhoneNumber:)), for: .editingChanged)
         // Do any additional setup after loading the view.
     }
     
@@ -50,7 +51,34 @@ class EditProfileViewController: UIViewController {
         return emailPred.evaluate(with: email)
     }
     
+    @IBOutlet weak var errorForPhone: UILabel!
     
+    @objc func checkAndDisPlayErrorForPhone(tfPhoneNumber:UITextField){
+        
+        if ( !isValidPhone(phone:tfPhoneNumber.text!)){
+            
+            
+            errorForPhone.text = "Phone number is invalid!"
+            
+            
+            btnSubmit.isEnabled  = false
+        }else if tfPhoneNumber.text!.count == 0{
+            
+            errorForPhone.text = " "
+            btnSubmit.isEnabled  = true
+        }
+        
+        else{
+            errorForPhone.text = " "
+            btnSubmit.isEnabled  = true
+        }
+    }
+    func isValidPhone(phone: String) -> Bool {
+
+          let phoneRegex = "^[0-9]{6,14}$";
+          let valid = NSPredicate(format: "SELF MATCHES %@", phoneRegex).evaluate(with: phone)
+          return valid
+       }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -126,7 +154,7 @@ class EditProfileViewController: UIViewController {
         
         builder.header.to = [MCOAddress(displayName: "New User", mailbox: destEmail) as Any]
                 builder.header.from = MCOAddress(displayName: "GOATSTEAM", mailbox: "goatsteam.2020@gmail.com")
-                builder.header.subject = "Parking Recipt"
+                builder.header.subject = "Information updated"
                 builder.htmlBody="<h1>You Just Edit your informaion</h1><p>Information: \(information)</p><h2>If you didn't authorize this, pleast contact us NOW!</h2>"
         
                 let rfc822Data = builder.data()

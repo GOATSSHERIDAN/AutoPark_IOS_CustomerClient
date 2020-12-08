@@ -10,32 +10,56 @@ import UIKit
 class SendEmailReciptViewController: UIViewController {
 
     @IBOutlet weak var emailTf: UITextField!
+    @IBOutlet weak var btnSend: UIButton!
+    @IBOutlet weak var errorForEmail: UILabel!
+    
     let mainDelegate = UIApplication.shared.delegate as! AppDelegate
     override func viewDidLoad() {
+        emailTf.textColor = .black
+        emailTf.backgroundColor = .white
         super.viewDidLoad()
-
+        emailTf.addTarget(self, action: #selector(checkAndDisPlayErrorForEmail(emailTf:)), for: .editingChanged)
         // Do any additional setup after loading the view.
     }
     
+    @objc func checkAndDisPlayErrorForEmail(emailTf:UITextField){
+        
+        if ( !isValidEmail(email:emailTf.text!)){
+            errorForEmail.text = "Email address is invalid!"
+            btnSend.isEnabled  = false
+        }
+        
+        else{
+            errorForEmail.text = " "
+            btnSend.isEnabled  = true
+        }
+    }
+    
+    func isValidEmail(email: String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailPred.evaluate(with: email)
+    }
+    
     @IBAction func sendRecipt(_ sender: Any) {
-        emailTf.textColor = .white
+        
         if emailTf.text!.isEmpty{
             let alertController = UIAlertController(title: "Error", message: "Please fill all fields", preferredStyle: .alert)
             let cancelAction1 = UIAlertAction(title: "Cancel", style: .default, handler: nil)
             alertController.addAction(cancelAction1)
             self.present(alertController,animated: true)
         }else{
+            
             sendRecipt(destEmail: emailTf.text ?? "error", amount: mainDelegate.parkingAmount ?? "error")
             
-            let alertController = UIAlertController(title: "Recipt Sent", message: "Thank you for using AutoPark", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Reciept Sent", message: "Thank you for using AutoPark", preferredStyle: .alert)
             let cancelAction = UIAlertAction(title: "OK", style: .default, handler: {
                 action in
-                self.dismiss(animated: true, completion: nil)
-                
+                self.dismissToViewControllers()
             })
             alertController.addAction(cancelAction)
             self.present(alertController,animated: true)
-            //self.dismiss(animated: true, completion: nil)
         }
     }
     
@@ -87,5 +111,9 @@ class SendEmailReciptViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
+    
+    func dismissToViewControllers() {
 
+        self.view.window!.rootViewController?.dismiss(animated: false, completion: nil)
+    }
 }

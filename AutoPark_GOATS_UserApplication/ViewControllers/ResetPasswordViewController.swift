@@ -45,12 +45,16 @@ class ResetPasswordViewController: UIViewController {
                 let db = Firestore.firestore()
                 db.collection("Users").document(userId).setData(userInfo)
                 let alertController = UIAlertController(title: "Successful", message: "Password updated", preferredStyle: .alert)
-                let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: {
+                    action in
+                    self.view.window!.rootViewController?.dismiss(animated: false, completion: nil)
+                })
                 
                 alertController.addAction(cancelAction)
                 self.present(alertController,animated: true)
                 
-                // do a unwind 
+                // do a unwind
+                
                 }
             }
     }

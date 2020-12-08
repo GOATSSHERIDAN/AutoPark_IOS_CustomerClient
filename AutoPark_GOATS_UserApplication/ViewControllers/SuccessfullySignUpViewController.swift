@@ -16,7 +16,7 @@ class SuccessfullySignUpViewController: UIViewController {
     }
     
     @IBAction func goToSignIn(_ sender: Any) {
-        performSegue(withIdentifier: "goToSignInPage", sender: nil)
+        self.view.window!.rootViewController?.dismiss(animated: false, completion: nil)
     }
     
     /*

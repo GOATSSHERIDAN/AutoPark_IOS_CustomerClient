@@ -420,7 +420,7 @@
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="Reset Password" id="FLJ-NT-vhP">
-                                        <barButtonItem key="leftBarButtonItem" title="&lt;Main" id="HRU-qQ-Tbs">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt;Cancel" id="HRU-qQ-Tbs">
                                             <color key="tintColor" red="0.11748378719999999" green="0.1214368269" blue="0.13332480190000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <connections>
                                                 <segue destination="Pmf-q7-KkO" kind="unwind" unwindAction="unwindToHomeViewControllerWithSender:" id="Ydg-Z9-6tA"/>
@@ -741,7 +741,7 @@
                                     <color key="textColor" red="0.11748378719999999" green="0.1214368269" blue="0.13332480190000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Send recipt" id="bzf-rT-4CL">
+                                    <navigationItem title="Send reciept" id="bzf-rT-4CL">
                                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="gEU-h5-9Vb">
                                             <color key="tintColor" red="0.11748378719999999" green="0.1214368269" blue="0.13332480190000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <connections>
@@ -760,6 +760,13 @@
                                 <rect key="frame" x="160" y="163" width="108" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNG-ly-Cse">
+                                <rect key="frame" x="20" y="127" width="388" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.96214920280000005" blue="0.81581145519999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -783,13 +790,15 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnSend" destination="TBg-VA-Xty" id="nqQ-kX-jvB"/>
                         <outlet property="emailTf" destination="opn-cY-T2y" id="2K0-Vc-AtY"/>
+                        <outlet property="errorForEmail" destination="QNG-ly-Cse" id="eX4-vT-Upa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pCO-7U-5rw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="HiW-62-tfU" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="967.28971962616822" y="-566.95464362850976"/>
+            <point key="canvasLocation" x="963.08411214953264" y="-566.30669546436286"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="Zq7-nc-h4p">
@@ -929,7 +938,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Yz-Ya-Roj">
-                                <rect key="frame" x="0.0" y="133" width="428" height="21"/>
+                                <rect key="frame" x="20" y="133" width="388" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.9775935013" blue="0.71867278739999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -937,6 +946,13 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMK-Ye-gRH">
                                 <rect key="frame" x="20" y="453" width="388" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.96214920280000005" blue="0.81581145519999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIa-sa-Eis">
+                                <rect key="frame" x="20" y="669" width="388" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.96214920280000005" blue="0.81581145519999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -950,6 +966,7 @@
                         <outlet property="btSubmit" destination="THH-6C-BYq" id="eO7-Mh-hMg"/>
                         <outlet property="btnSubmit" destination="THH-6C-BYq" id="OGC-Xa-M9G"/>
                         <outlet property="errorForEmail" destination="nMK-Ye-gRH" id="QXD-P9-a7h"/>
+                        <outlet property="errorForPhone" destination="gIa-sa-Eis" id="edc-la-icW"/>
                         <outlet property="errorForUserId" destination="7Yz-Ya-Roj" id="CgM-X5-jt0"/>
                         <outlet property="tfEmail" destination="rv2-kP-qIu" id="Eg7-3S-pgI"/>
                         <outlet property="tfFName" destination="OT5-qp-k6A" id="YPf-E1-fzN"/>
@@ -1106,9 +1123,6 @@
                         <viewLayoutGuide key="safeArea" id="VwI-EF-w1e"/>
                         <color key="backgroundColor" red="0.11748378719999999" green="0.1214368269" blue="0.13332480190000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <connections>
-                        <segue destination="RsH-ya-sNX" kind="presentation" identifier="goToSignInPage" modalPresentationStyle="fullScreen" id="F6X-M8-yam"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2e9-JD-gDc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1276,6 +1290,13 @@
                                 <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIL-k5-VoR">
+                                <rect key="frame" x="20" y="367" width="388" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.96214920280000005" blue="0.81581145519999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ayb-Qa-AIv"/>
                         <color key="backgroundColor" red="0.11748378719999999" green="0.1214368269" blue="0.13332480190000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1312,6 +1333,7 @@
                     <connections>
                         <outlet property="btnSubmit" destination="bFu-Xp-jc0" id="PQB-D2-fm0"/>
                         <outlet property="errorForEmail" destination="m7m-eC-eHT" id="J3r-07-N8x"/>
+                        <outlet property="errorForPhone" destination="gIL-k5-VoR" id="amB-Ef-Md7"/>
                         <outlet property="tfEmail" destination="jKI-ln-wM2" id="lXM-RU-nso"/>
                         <outlet property="tfFirstName" destination="ZIx-MP-HxS" id="wgI-oM-W5e"/>
                         <outlet property="tfLastName" destination="gRu-Ld-1rh" id="h7T-ps-1wQ"/>
@@ -1500,9 +1522,6 @@
             <point key="canvasLocation" x="-4044.3925233644859" y="2451.1879049676027"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="HNH-Fu-p69"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="AppIcon.png" width="514" height="318"/>
         <image name="applepaybutton.png" width="424" height="76"/>

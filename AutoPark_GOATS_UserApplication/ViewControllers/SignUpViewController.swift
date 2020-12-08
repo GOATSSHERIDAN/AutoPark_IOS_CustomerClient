@@ -100,6 +100,7 @@ class SignUpViewController: UIViewController {
         isEmailVerified = false
         tfUserId.addTarget(self, action: #selector(checkAndDisPlayErrorForUserId(tfUserId:)), for: .editingChanged)
         tfEmail.addTarget(self, action: #selector(checkAndDisPlayErrorForEmail(tfEmail:)), for: .editingChanged)
+        tfPhoneNumber.addTarget(self, action: #selector(checkAndDisPlayErrorForPhone(tfPhoneNumber:)), for: .editingChanged)
         //sendVerificationCode(destEmail:"cuilin940127@gmail.com")
         // Do any additional setup after loading the view.
        
@@ -131,6 +132,10 @@ class SignUpViewController: UIViewController {
         if ( !isValidEmail(email:tfEmail.text!)){
             errorForEmail.text = "Email address is invalid!"
             btnSubmit.isEnabled  = false
+        }else if tfEmail.text!.count == 0{
+            errorForEmail.text = " "
+            btnSubmit.isEnabled  = true
+            
         }
         
         else{
@@ -138,6 +143,35 @@ class SignUpViewController: UIViewController {
             btnSubmit.isEnabled  = true
         }
     }
+    
+    @IBOutlet weak var errorForPhone: UILabel!
+    
+    @objc func checkAndDisPlayErrorForPhone(tfPhoneNumber:UITextField){
+        
+        if ( !isValidPhone(phone:tfPhoneNumber.text!)){
+            
+            
+            errorForPhone.text = "Phone number is invalid!"
+            
+            
+            btnSubmit.isEnabled  = false
+        }else if tfPhoneNumber.text!.count == 0{
+            
+            errorForPhone.text = " "
+            btnSubmit.isEnabled  = true
+        }
+        
+        else{
+            errorForPhone.text = " "
+            btnSubmit.isEnabled  = true
+        }
+    }
+    func isValidPhone(phone: String) -> Bool {
+
+          let phoneRegex = "^[0-9]{6,14}$";
+          let valid = NSPredicate(format: "SELF MATCHES %@", phoneRegex).evaluate(with: phone)
+          return valid
+       }
     
     func isValidEmail(email: String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
